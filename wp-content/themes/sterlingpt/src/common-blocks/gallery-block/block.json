@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/gallery-block",
+	"version": "1.0.0",
+	"title": "Gallery With Popup",
+	"category": "common_block",
+	"icon": "format-gallery",
+	"description": "Show multiple custom images with the Lightbox effect.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gallery-block",
+	"editorStyle": "file:./index.css",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

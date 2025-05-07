@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/header-top-buttons",
+	"version": "0.1.0",
+	"title": "Header Top Buttons",
+	"category": "archive_template_block",
+	"icon": "button",
+	"description": "Header top buttons layout.",
+	"attributes": {
+		"buttonOrder": {
+			"type": "array",
+			"default": ["call", "pay", "review"]
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "header-top-buttons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

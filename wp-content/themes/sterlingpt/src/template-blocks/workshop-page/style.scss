@@ -1,0 +1,136 @@
+$workshop: ".workshop";
+
+#{$workshop} {
+	&-listing {
+		#{$workshop} {
+			&-item {
+				@media (min-width: 768px) {
+					display: flex;
+					justify-content: space-between;
+				    align-items: flex-start;
+					padding: 45px;
+					&.has-image {
+						flex-direction: row-reverse;
+					}
+				}
+				@media (max-width: 767px) {
+					padding: 25px;
+				}
+				background: var(--wp--preset--color--gray-100);
+				border: 1px solid var(--wp--preset--color--primary-100);
+				border-radius: 8px;
+				+ #{$workshop} {
+					&-item {
+						margin-top: 50px;
+					}
+				}
+				h3 {
+					color: var(--wp--preset--color--primary-100);
+					margin: 0;
+				}
+				.excerpt {
+					font-size: 24px;
+				}
+				h4 {
+					color: var(--wp--preset--color--primary-100);
+					font-weight: 500;
+					margin: 16px 0 0 0;
+				}
+				.date {
+					margin: 5px 0 0 0;
+				}
+				.btn {
+					@media (max-width: 767px) {
+						margin-top: 25px;
+					}
+					@media (min-width: 768px) {
+						margin-top: 45px;
+					}
+				}
+				&.has-image {
+					#{$workshop} {
+						&-info {	
+							@media (max-width: 767px) {
+								margin-top: 30px;
+							}	
+							@media (min-width: 768px) and (max-width: 1023px) {
+								width: calc(var(--wp--custom--settings-key--border-radius-full) - 357px);
+							}
+							@media (min-width: 1024px) {
+								width: calc(var(--wp--custom--settings-key--border-radius-full) - 397px);
+							}
+						}
+					}
+				}
+			}
+			&-info {	
+				@media (max-width: 767px) {
+					text-align: center;
+				}	
+			}
+		}
+		#{$workshop} {
+			&-author {
+				position: relative;
+				@media (max-width: 767px) {
+					width: 240px;
+					margin: 0 auto;
+				}
+				@media (min-width: 767px) {
+					width: 317px;
+				}
+				.author {
+					position: relative;
+					display: block;
+				    border-radius: 8px;
+				    overflow: hidden;
+					@media (max-width: 767px) {
+    					aspect-ratio: 3 / 4;
+					}
+					@media (min-width: 767px) {
+    					aspect-ratio: 1 / 1;
+					}
+					figure {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: var(--wp--custom--settings-key--border-radius-full);
+						height: var(--wp--custom--settings-key--border-radius-full);
+						display: block;
+						img {
+							width: var(--wp--custom--settings-key--border-radius-full);
+							height: var(--wp--custom--settings-key--border-radius-full);
+							object-fit: cover;
+							object-position: top;
+						}
+					}
+				}
+				.author-data {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					background: var(--wp--preset--color--secondary-100);
+					padding: 10px 20px;
+					border-radius: 0 10px 0 0;
+					@media (max-width: 767px) {
+						width: 220px;
+					}
+					@media (min-width: 767px) {
+						width: 248px;
+					}
+					* {
+						color: var(--wp--preset--color--white);
+					}
+					.host-title {
+						font-size: 24px;
+						font-weight: 500;
+					}
+					.host-name {
+						font-size: 20px;
+						text-transform: capitalize;
+					}
+				}
+			}
+		}
+	}
+}

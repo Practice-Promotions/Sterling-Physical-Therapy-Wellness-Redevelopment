@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "ppcoreblocks/team-listing",
+	"title": "Team Listing",
+	"icon": "admin-users",
+	"category": "archive_template_block",
+	"description": "Fetches and displays posts from our team posttype with published status",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"query": {
+			"type": "object",
+			"default": {}
+		},
+		"locationCategory": {
+            "type": "string",
+            "default": ""
+        }
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "team-listing",
+	"editorScript": "file:./index.js"
+}

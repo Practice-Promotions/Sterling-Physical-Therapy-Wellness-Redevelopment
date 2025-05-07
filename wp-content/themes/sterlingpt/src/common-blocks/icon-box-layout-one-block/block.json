@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/icon-box-layout-one-block",
+	"version": "1.0.0",
+	"title": "Icon Box - Layout 1",
+	"category": "common_block",
+	"icon": "cover-image",
+	"description": "A block displaying an icon, title, and description for highlighting key information visually.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+        "columnUrl": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"textdomain": "icon-box-layout-one-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

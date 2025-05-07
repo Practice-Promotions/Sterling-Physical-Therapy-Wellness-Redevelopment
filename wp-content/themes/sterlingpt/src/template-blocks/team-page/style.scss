@@ -1,0 +1,278 @@
+/** Team listing page styles */
+$team: ".team";
+
+/** Category filter nav styles */
+.category {
+	&-filter {
+		margin-bottom: 25px;
+	}
+
+	&-select-nav {
+		display: none;
+		margin: 0 auto;
+		@media (max-width: 576px) {
+			display: block;
+		}
+	}
+
+	&-filter-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@media (max-width: 576px) {
+			display: none;
+		}
+
+		li {
+			margin: 5px;
+			padding: 0;
+		}
+
+		.btn {
+			&.active {
+				position: relative;
+				color: var(--wp--preset--color--white);
+				background-color: var(--wp--preset--color--secondary-100);
+				border-color: var(--wp--preset--color--secondary-100);
+			}
+		}
+	}
+}
+
+#{$team} {
+	/** Team filter styles */
+	&-cat-filter,
+	&-loc-filter {
+		.btn.active::before {
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 10px 10px 0;
+			border-top-color: var(--wp--preset--color--primary-100);
+			transition: 0.4s all;
+			content: "";
+			pointer-events: none;
+		}
+	}
+	/** Team listing page styles */
+	&-wrapper {
+		position: relative;
+		text-align: center;
+
+		&.has-circle {
+			/** Team listing with circle layout */
+			#{$team} {
+				&-item {
+					&-inner {
+						background-color: transparent;
+
+						#{$team} {
+							&-media {
+								//@include pictureImg();
+								padding-top: aspect-ratio(1, 1);
+								border-radius: 50%;
+
+								&::before {
+									border-radius: 50%;
+								}
+							}
+
+							&-body {
+								background-color: var(--wp--preset--color--white);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-cat-title {
+		width: 100%;
+		margin: 0;
+		color: var(--wp--preset--color--primary-100);
+	}
+
+	&-listing {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		///margin: 0 calc(-1 * 15px);
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&-item {
+		width: 100%;
+		margin-top: 30px;
+		padding: 0 15px;
+		@media (max-width: 576px) {
+			max-width: 320px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		@media (min-width: 767px) {
+			width: 50%;
+		}
+		@media (min-width: 992px) {
+			width: 33.33%;
+		}
+		@media (min-width: 992px) {
+			width: 25%;
+		}
+
+		&-inner {
+			height: 100%;
+			background-color: var(--wp--preset--color--gray-100);
+			border-top-left-radius: var(--wp--custom--settings-key--border-radius);
+			border-top-right-radius: var(--wp--custom--settings-key--border-radius);
+		}
+
+		#{$team} {
+			&-media {
+				//@include pictureImg();
+				display: block;
+				padding-top: aspect-ratio(400, 450);
+				overflow: hidden;
+				border-radius: var(--wp--custom--settings-key--border-radius);
+				position: relative;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					background-color: rgba(0, 0, 0, 0.5);
+					transition: 0.4s all;
+					content: "";
+					pointer-events: none;
+					width: 100%;
+					height: 100%;
+					transform: scale(0.5);
+					visibility: hidden;
+					opacity: 0;
+					pointer-events: none;
+				}
+
+				&:hover {
+					&::before {
+						transform: scale(1);
+						visibility: visible;
+						opacity: 1;
+					}
+
+					#{$team} {
+						&-hover {
+							visibility: visible;
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			&-hover {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 1;
+				flex-direction: column;
+				padding: 15px;
+				visibility: hidden;
+				opacity: 0;
+				transition: 0.4s all;
+
+				.btn-link {
+					color: var(--wp--preset--color--white);
+				}
+			}
+
+			&-body {
+				z-index: 1;
+				padding: 15px;
+			}
+
+			&-name {
+				margin-bottom: 0;
+				font-size: 20px;
+			}
+
+			&-post {
+				color: var(--wp--preset--color--secondary-100);
+				font-weight: 700;
+			}
+		}
+	}
+	/** Team single page styles */
+	&-single {
+		#{$team} {
+			&-bios {
+				width: 100%;
+			}
+
+			&-media {
+				margin-bottom: 60px;
+				padding: 30px 0;
+
+				&.has-circle {
+					#{$team}-media-thumb {
+						//@include pictureImg();
+						padding-top: aspect-ratio(1, 1);
+						border-radius: 50%;
+						overflow: hidden;
+					}
+
+					picture {
+						img {
+							border-radius: 50%;
+						}
+					}
+				}
+
+				picture {
+					img {
+						max-width: 100% !important;
+						border: 10px solid var(--wp--preset--color--white);
+					}
+				}
+			}
+
+			&-media-inner {
+				display: inline-block;
+				width: 290px;
+				margin-bottom: -60px;
+			}
+
+			&-media-thumb {
+				background-color: var(--wp--preset--color--white);
+			}
+
+			&-content {
+				h2 {
+					margin: 0;
+				}
+
+				h3 {
+					color: var(--wp--preset--color--primary-100);
+					font-weight: 400;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

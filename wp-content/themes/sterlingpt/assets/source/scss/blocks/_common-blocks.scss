@@ -1,0 +1,222 @@
+/* Deafult Gallery with slider design */
+.gallery-with-slider {
+	position: relative;
+
+	&.slick-slider {
+		.slick-dots {
+			position: absolute;
+			bottom: 0;
+		}
+
+		.slick-slide {
+			height: inherit;
+		}
+	}
+}
+
+
+/* Condition Section **/
+.condition-section{
+	.condition-wrapper{
+		justify-content: space-between;
+		.condition-part{
+			@include respond-below('md-wp') {
+				padding: 0 70px;
+			}
+			@include respond-below('ssm') {
+				padding: 0 40px;
+			}
+			
+			.cta-item{
+				.cta-item-inner{
+					.cta-item-group{
+						.svg-embed{
+							position: relative;
+							overflow: hidden;
+							&:before{
+								position: absolute;
+								width: 120%;
+								height: 100%;
+								background: var(--wp--preset--color--secondary-100);
+								left: 100%;
+								top: 100%;
+								content: "";
+								transform: rotate(122deg);
+								transition: .8s all;
+								pointer-events: none;
+								cursor: none;
+							}
+							svg{
+								position: relative;
+							}
+						}
+					}
+					&:hover{
+						.cta-item-group{
+							.svg-embed{
+								&:before{
+									left: -69%;
+									top: -50%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* Testimonial Section */
+.testimonial-section{
+	.testimonial-section-inner{
+		justify-content: space-between;
+		@include respond-below('md-wp') {
+			flex-direction: column-reverse;
+		}
+		.testimonial-slider-part{
+			@include respond-above('lg'){
+				padding-left: 55px;
+			}
+		}
+		.slick-dots {
+			position: relative;
+			width: 100%;
+			margin: 15px 0;
+			text-align: center;
+		  
+			li {
+			  button {
+				border: 1px solid var(--wp--preset--color--white);
+		  
+				&:hover {
+				  cursor: pointer;
+				  background-color: var(--wp--preset--color--white);
+				}
+			  }
+			  &.slick-active {
+				button {
+					background-color: var(--wp--preset--color--white);
+				}
+			  }
+			}
+		  }
+		.testimonial-block{
+			.testimonial-block-listing-item{
+				text-align: center;
+				h3{
+					font-weight: 400;
+					margin-bottom: 25px;
+					line-height: 1.24;
+					text-transform: uppercase;
+				}
+				p{
+					color: $white;
+				}
+			}
+		}
+	}
+	
+}
+
+/* Insurance Partner */
+.insurance-partner {
+	.insurance-partner-gallery {
+		.wp-block-column {
+			.svg-embed {
+				width: auto;
+				height: 50px;
+				margin: 0 auto;
+				padding: 10px 25px;
+				display: block;
+
+				svg {
+					fill: currentColor;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.slick-list {
+		width: 100%;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.slick-arrow {
+		&.slick-prev {
+			left: 15px;
+		}
+
+		&.slick-next {
+			right: 15px;
+		}
+	}
+}
+
+/* Appointment Step Block */
+.appointment-steps-section {
+	.appointment-steps-wrapper {
+		.appointment-steps-block {
+			position: relative;
+			flex-basis: 750px !important;
+			margin: 0 auto;
+
+			@include respond-below("lg") {
+				flex-basis: 100% !important;
+			}
+
+			.appointment-steps-icon {
+				position: absolute;
+				top: 15px;
+				right: 0;
+				z-index: 2;
+				width: 255px;
+				height: 300px;
+				pointer-events: none;
+
+				@include respond-below("xl") {
+					height: 255px;
+				}
+
+				@include respond-above("xl") {
+					height: 300px;
+				}
+
+				@include mobile() {
+					display: none;
+				}
+			}
+
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+}
+
+/* career cta block **/
+.career-cta-block {
+	.wp-block-ppcoreblocks-cta-icon-title-block {
+		.cta-icon-only {
+			.svg-embed {
+				svg {
+					fill: var(--wp--preset--color--primary-100);
+				}
+			}
+
+			&:hover {
+				background-color: transparent !important;
+
+				.svg-embed {
+					svg {
+						fill: var(--wp--preset--color--secondary-100);
+					}
+				}
+			}
+		}
+	}
+}

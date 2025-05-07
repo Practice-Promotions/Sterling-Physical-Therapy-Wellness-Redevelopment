@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/taxonomy-condition",
+	"version": "1.0.0",
+	"title": "Taxonomy Condition",
+	"category": "archive_template_block",
+	"icon": "smiley",
+	"description": "Example static block with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "taxonomy-condition",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/newsletter-list",
+	"version": "1.0.0",
+	"title": "Newsletter Post List",
+	"category": "archive_template_block",
+	"icon": "smiley",
+	"description": "Newsletter Post List for the Newsletter Archive or Listing Page",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "newsletter-list",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

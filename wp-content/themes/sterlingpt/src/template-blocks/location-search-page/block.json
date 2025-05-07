@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/location-search-page",
+    "version": "1.0.0",
+    "title": "Location Search Page",
+    "category": "archive_template_block",
+    "icon": "location-alt",
+    "description": "Example static block with Create Block tool.",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "location-search-page",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

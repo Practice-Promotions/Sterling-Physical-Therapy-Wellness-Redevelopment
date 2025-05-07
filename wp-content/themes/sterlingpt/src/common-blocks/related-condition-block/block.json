@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "1.1.0",
+	"name": "ppcoreblocks/related-condition-block",
+	"title": "Related Condition",
+	"icon": "location",
+	"category": "common_block",
+	"description": "Fetches and displays related condition",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"query": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "related-condition-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./index.css"
+}

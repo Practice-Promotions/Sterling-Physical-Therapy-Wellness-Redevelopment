@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+// font family
+$font-family-base: var(--wp--preset--font-family--poppins) !default;
+$font-family-hgroup: var(--wp--preset--font-family--poppins) !default;
+$icon-family: "herostencil2k24" !important;
+
+// body contect text size
+$font-size-base: $base !default; //16px (Don't change)
+
+// Colors
+$primary-100: var(--wp--preset--color--primary-100) !default;
+$primary-200: var(--wp--preset--color--primary-200) !default;
+$secondary-100: var(--wp--preset--color--secondary-100) !default;
+$secondary-200: var(--wp--preset--color--secondary-200) !default;
+$tertiary-100: var(--wp--preset--color--tertiary-100) !default;
+
+// Start with assigning color names to specific hex values.
+$white: var(--wp--preset--color--white) !default;
+$black: var(--wp--preset--color--black) !default;
+$gray-100: var(--wp--preset--color--gray-100) !default;
+$gray-200: var(--wp--preset--color--gray-200) !default;
+$gray-300: var(--wp--preset--color--gray-300) !default;
+$gray-400: var(--wp--preset--color--gray-400) !default;
+
+// Body color
+$body-bg: $white !default;
+$body-color: $black !default;
+
+// Heading font Size
+$headingSize: (
+  'h1': 36px,
+  'h2': 28px,
+  'h3': 24px,
+  'h4': 22px,
+  'h5': 20px,
+  'h6': 16px,
+);
+
+$hgroup-margin-bottom: 15px !default;
+$hgroup-font-family: $font-family-hgroup !default;
+$hgroup-font-weight: 600 !default;
+$hgroup-line-height: 1.25 !default;
+$hgroup-color: $black !default;
+
+// Custom
+$paddingButtonX: var(--wp--custom--settings-key--padding-button-x) !default;
+$paddingButtonY: var(--wp--custom--settings-key--padding-button-y) !default;
+$borderRadius: var(--wp--custom--settings-key--border-radius) !default;
+$borderRadiusLg: var(--wp--custom--settings-key--border-radius-lg) !default;
+$borderRadiusFull: var(--wp--custom--settings-key--border-radius-full) !default;
+$borderRadiusButton: var(--wp--custom--settings-key--border-radius-button) !default;
+
+// BoxShadow
+$boxShadow: var(--wp--preset--shadow--natural) !default;
+
+// Forms
+$label-color: $black;
+$label-font-size: 14px;
+$label-font-weight: 400;
+$label-font-family: $font-family-base;
+
+$input-bg: $white;
+$input-font-size: 14px;
+$input-font-weight: 400;
+$input-font-family: $font-family-base;
+$input-color: $black;
+$input-color-placeholder: rgba($black);
+$input-height-base: 44px;
+$input-radius: $borderRadiusButton;
+$input-border-color: $primary-100;
+$input-border-color-focus: $primary-200;
+$input-background-color: $white;
+$textarea-height-base: 150px;
+
+// Set assets path
+$img: '../../images'; // background-img:url( #{$img}/)
+$fonts: '../../fonts';
+
+// Container's maximum width
+$gutters: 50px;
+$row-gutters: 30px;
+$container-width: var(--wp--style--global--content-size) !default;
+
+// Media Query breakpoints.
+$breakpoints: (
+  'ssm': 480px,
+  // Mobile Devices
+  'sm': 576px,
+  // Mobile Devices
+  'smd': 640px,
+  // Mobile Devices
+  'md': 768px,
+  // Mobile Devices
+  'lg': 992px,
+  // Tablet Devices
+  'sxl': 1024px,
+  // Tablet Devices
+  'xl': 1200px,
+  // Laptop Devices
+  'xxl': 1400px, // Desktop Devices
+  // Mobile Devices
+  'md-wp': 781px // WordPress - Media Query
+);
+
+// Advance utilities
+$advance-utilities: true;
+
+// Spacing: padding and margin
+$spacing: true;
+$spaceamounts: (
+  30
+);
+
+// Background and Text color classes(ex: .bg-white and .text-white)
+$bgColor-map: (
+  'white': $white,
+  'dark': $black
+);
+
+/* Note: If need Disable Decimal-value functionilty open function.scss file */

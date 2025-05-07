@@ -1,0 +1,15 @@
+$cta: ".cta";
+
+.icon-box-layout-three {
+	position: relative;
+	#{$cta} {
+		&-icon {
+			width: 124px;
+			position: absolute;
+			bottom: 24px;
+			right: 24px;
+			opacity: 0.1;
+			pointer-events: none;
+		}
+	}
+}

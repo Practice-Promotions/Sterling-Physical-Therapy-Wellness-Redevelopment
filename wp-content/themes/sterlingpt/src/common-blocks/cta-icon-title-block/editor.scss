@@ -1,0 +1,35 @@
+$cta: ".cta";
+
+.wp-block-ppcoreblocks-cta-icon-title-block {
+	&.no-border {
+		#{$cta} {
+			&-icon-only {
+				border: none;
+			}
+		}
+	}
+
+	&.align-center {
+		#{$cta} {
+			&-icon-only {
+				margin: 0 auto;
+			}
+		}
+
+		h5 {
+			text-align: center;
+		}
+	}
+
+	#{$cta} {
+		&-icon-only {
+			width: auto;
+			height: auto;
+
+			.block-editor-block-list__block .block-editor-plain-text {
+				height: 70px !important;
+				width: 70px !important;
+			}
+		}
+	}
+}

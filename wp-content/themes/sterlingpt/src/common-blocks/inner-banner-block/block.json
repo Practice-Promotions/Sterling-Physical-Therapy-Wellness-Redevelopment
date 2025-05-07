@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/inner-banner-block",
+	"version": "1.0.0",
+	"title": "Inner Banner",
+	"category": "common_block",
+	"icon": "feedback",
+	"description": "Displays a customizable banner with an optional background image, page title, and breadcrumbs for enhanced navigation.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "inner-banner-block",
+	"editorStyle": "file:./index.css",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

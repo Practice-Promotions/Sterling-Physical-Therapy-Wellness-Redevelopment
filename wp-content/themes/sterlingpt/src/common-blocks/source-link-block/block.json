@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "ppcoreblocks/source-link-block",
+	"title": "Source Link",
+	"icon": "admin-links",
+	"category": "common_block",
+	"description": "Add multiple source links to your posts with a user-friendly repeater field for easy reference management.",
+	"attributes": {
+		"paragraphs": {
+		"type": "array",
+		"default": [],
+		"items": {
+			"type": "object",
+			"properties": {
+				"link": { "type": "string" }
+			}
+		}
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "source-link-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

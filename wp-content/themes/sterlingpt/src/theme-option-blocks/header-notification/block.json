@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/header-notification",
+	"version": "0.1.0",
+	"title": "Header Notification",
+	"category": "archive_template_block",
+	"icon": "button",
+	"description": "Header top buttons layout.",
+	"attributes": {
+		"buttonOrder": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "header-notification",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

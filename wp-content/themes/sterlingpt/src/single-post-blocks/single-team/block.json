@@ -1,0 +1,16 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/single-team",
+    "version": "1.0.0",
+    "title": "Single Team",
+	"category": "single_post_block",
+    "icon": "groups",
+    "description": "The 'Team Details' block highlights individual team member profiles, allowing you to easily showcase staff bios, roles, and detailed information about each member.",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "single-team",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
+}

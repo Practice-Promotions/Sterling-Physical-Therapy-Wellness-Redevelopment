@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/team-page",
+    "version": "1.0.0",
+    "title": "Team Page",
+    "category": "archive_template_block",
+    "icon": "admin-users",
+    "description": "Team Page Listing Block",
+    "attributes": {
+		"teamSelectType": {
+			"type": "string",
+			"default": ""
+		}
+	},
+    "supports": {
+        "html": false
+    },
+    "textdomain": "team-page",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

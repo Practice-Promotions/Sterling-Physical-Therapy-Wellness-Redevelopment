@@ -1,0 +1,15 @@
+$cta: ".cta";
+.icon-box-layout-one {
+	display: flex;
+	#{$cta} {
+		&-icon {
+			width: auto;
+			&-content {
+				width: calc(100% - 80px);
+			}
+		}
+	}
+	&.wp-block-columns-is-layout-flex {
+		padding: 0 0;
+	}
+}

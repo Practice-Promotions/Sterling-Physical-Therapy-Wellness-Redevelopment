@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/blog-block",
+	"version": "1.0.0",
+	"title": "Blog Post",
+	"category": "common_block",
+	"icon": "welcome-write-blog",
+	"description": "The Blog block displays recent blog posts, making it easy to feature blog content on any page without HTML editing.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blog-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

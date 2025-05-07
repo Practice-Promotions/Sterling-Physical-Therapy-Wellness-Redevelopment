@@ -1,0 +1,42 @@
+{
+  	"name": "herostencilpt",
+  	"version": "1.0.0",
+  	"description": "",
+  	"scripts": {
+  	  	"build:sass": "gulp prod",
+  	  	"build:wp": "wp-scripts build",
+  	  	"start:sass": "gulp watchFiles",
+  	  	"start:wp": "wp-scripts start",
+  	  	"build": "npm-run-all build:*",
+  	  	"start": "npm-run-all --parallel start:*"
+  	},
+  	"dependencies": {
+  	  	"@fancyapps/ui": "^5.0.36",
+  	  	"@wordpress/interactivity": "^6.7.0",
+  	  	"gulp-sourcemaps": "^3.0.0",
+  	  	"node-sass": "^6.0.1",
+  	  	"postcss": "^8.4.4",
+  	  	"sass": "1.77.6",
+  	  	"sass-migrator": "^1.5.3",
+  	  	"swiper": "^11.2.6",
+  	  	"yarn": "^1.22.17"
+  	},
+  	"devDependencies": {
+  	  	"@wordpress/scripts": "^28.5.0",
+  	  	"autoprefixer": "^10.4.0",
+  	  	"browser-sync": "^2.27.7",
+  	  	"del": "^6.0.0",
+  	  	"gulp": "^4.0.2",
+  	  	"gulp-clean-css": "^4.3.0",
+  	  	"gulp-concat": "^2.6.1",
+  	  	"gulp-imagemin": "^8.0.0",
+  	  	"gulp-postcss": "^9.0.1",
+  	  	"gulp-purgecss": "^4.1.3",
+  	  	"gulp-replace": "^1.1.3",
+  	  	"gulp-sass": "^5.0.0",
+  	  	"gulp-terser": "^2.1.0",
+  	  	"gulp-webp": "^4.0.1",
+  	  	"log-symbols": "^5.1.0",
+  	  	"npm-run-all": "^4.1.5"
+  	}
+}

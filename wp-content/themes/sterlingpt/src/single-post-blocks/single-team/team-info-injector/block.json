@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "single-team/team-info-injector",
+	"title": "Team Info (Custom Meta)",
+	"icon": "id",
+	"parent": ["post-listings-manager"],
+	"category": "single_post_block",
+	"description": "Displays Team custom meta information within core query loop.",
+	"attributes": {
+        "team_education": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"usesContext": ["postId", "postType"],
+	"supports": {
+		"align": true
+	},
+	"example": {},
+	"textdomain": "team-info-injector",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

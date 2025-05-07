@@ -1,0 +1,9 @@
+$cta-icon: ".cta-icon";
+.icon-box-layout-two {
+	#{$cta-icon} {
+		width: 80px;
+		&-column {
+			
+		}
+	}
+}

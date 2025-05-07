@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/testimonial-page",
+    "version": "1.0.0",
+    "title": "Testimonial Page",
+    "category": "archive_template_block",
+    "icon": "format-quote",
+    "description": "The 'Testimonial Page' block displays a collection of testimonials, ideal for highlighting customer feedback on any page",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "testimonial-page",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

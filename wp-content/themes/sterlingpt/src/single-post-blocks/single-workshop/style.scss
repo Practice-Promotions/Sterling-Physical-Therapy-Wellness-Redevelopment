@@ -1,0 +1,163 @@
+$workshop: ".workshop";
+
+#{$workshop} {
+	&-details {
+		.section-header {
+			h2 {
+				color: var(--wp--preset--color--primary-100);
+			}
+
+			h6 {
+				color: var(--wp--preset--color--secondary-100);
+				font-weight: 400;
+				margin: 0;
+			}
+		}
+
+		.author-part {
+			@media (min-width: 992px) {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+			}
+
+
+			svg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+			}
+
+			svg,
+			path {
+				fill: var(--wp--preset--color--secondary-100);
+			}
+
+			.author {
+				position: relative;
+				width: 280px;
+				display: block;
+				overflow: hidden;
+				border-radius: var(--wp--custom--settings-key--border-radius);
+			}
+
+			.author-data {
+				@media (max-width: 992px) {
+					margin-top: 30px;
+				}
+
+				@media (min-width: 992px) {
+					width: calc(100% - 320px);
+				}
+			}
+
+			.host-name {
+				color: var(--wp--preset--color--primary-100);
+				font-weight: 500;
+				text-transform: capitalize;
+			}
+
+			.host-designation {
+				font-weight: 500;
+			}
+
+			.data-info {
+				@media (min-width: 641px) {
+					display: flex;
+					align-items: center;
+				}
+			}
+
+			.host-info {
+				@media (min-width: 641px) {
+					width: calc(var(--wp--custom--settings-key--border-radius-full) - 310px);
+					padding-right: 20px;
+				}
+			}
+
+			#{$workshop} {
+				&-venue {
+					@media (max-width: 641px) {
+						margin-top: 20px;
+					}
+
+					@media (min-width: 641px) {
+						width: 310px;
+						padding-left: 20px;
+						border-left: 1px solid var(--wp--preset--color--primary-100);
+					}
+
+					>* {
+						position: relative;
+						padding: 0 0 0 32px;
+						margin: 16px 0 0 0;
+
+						&:before {
+							position: absolute;
+							color: var(--wp--preset--color--secondary-100);
+							font-size: 20px;
+							line-height: 1;
+							margin-right: 0;
+							top: 2px;
+							left: 0;
+						}
+					}
+
+					.date {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
+		#{$workshop} {
+			&-content {
+				margin-top: 24px;
+			}
+
+			&-button {
+				margin-top: 40px;
+				text-align: right;
+
+				.btn {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					padding-left: 17px;
+					padding-right: 17px;
+
+					svg {
+						position: absolute;
+						left: 17px;
+						fill: var(--wp--preset--color--white);
+					}
+
+					+.btn {
+						margin-left: 16px;
+					}
+
+					&.contact-number {
+						&:before {
+							margin-right: 5px;
+							font-size: 16px;
+							line-height: 1;
+							top: 2px;
+							position: relative;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#register {
+	width: 650px;
+
+	.gform_footer {
+		input {
+			margin: 0;
+		}
+	}
+}

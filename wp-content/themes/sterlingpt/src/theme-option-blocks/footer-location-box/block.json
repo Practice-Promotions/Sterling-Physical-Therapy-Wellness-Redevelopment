@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/footer-location-box",
+	"version": "0.1.0",
+	"title": "Footer Location Box",
+	"category": "archive_template_block",
+	"icon": "location-alt",
+	"description": "Footer Location bOX with meta fields.",
+	"attributes": {
+		"locationType": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "footer-location-box",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

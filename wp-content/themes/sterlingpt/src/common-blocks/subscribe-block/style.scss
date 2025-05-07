@@ -1,0 +1,67 @@
+$subscribe: ".subscribe";
+
+#{$subscribe} {
+  &-inner {
+    @media (min-width: 993px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    margin: 0 auto !important;
+    .wp-block-heading {
+      @media (min-width: 993px) and (max-width: 1200px) {
+        width: calc(100% - 415px);
+      }
+      @media (min-width: 1201px) {
+        width: calc(100% - 515px);
+      }
+    }
+    .gform_wrapper {
+      @media (max-width: 993px) {
+        margin-top: 20px;
+      }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        width: 355px;
+      }
+      @media (min-width: 1201px) {
+        width: 416px;
+      }
+      margin-top: 0;
+      form {
+        position: relative;
+        input[type="email"] {
+          height: 60px;
+          padding: 12px 155px 12px 12px !important;
+
+          @media (max-width: 480px) {
+            padding: 12px !important;
+          }
+        }
+        .gfield_description {
+          display: block;
+        }
+      }
+      .gform_footer {
+        margin: 0 !important;
+        padding: 0 !important;
+        @media (min-width: 481px) {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+        }
+        @media (max-width: 480px) {
+          justify-content: center;
+          margin: 15px 0 0 0 !important;
+        }
+      }
+      .gform_button {
+        margin: 0 !important;
+        border-color: transparent;
+      }
+      .gform_validation_errors,
+      .gfield_description {
+        display: none;
+      }
+    }
+  }
+}

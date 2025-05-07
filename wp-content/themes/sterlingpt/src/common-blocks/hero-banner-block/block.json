@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/hero-banner-block",
+	"version": "1.0.0",
+	"title": "Hero Banner",
+	"category": "common_block",
+	"icon": "image-flip-horizontal",
+	"description": "The Hero Banner block creates a customizable banner with editable content.",
+	"supports": {
+        "html": false
+    },
+    "attributes": {
+        "content": {
+            "type": "string",
+            "default": ""
+        },
+        "color": {
+            "type": "string",
+            "default": "black"
+        },
+        "customClass": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"textdomain": "hero-banner-block",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

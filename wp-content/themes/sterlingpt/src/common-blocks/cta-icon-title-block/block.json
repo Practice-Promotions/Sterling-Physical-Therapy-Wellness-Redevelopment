@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/cta-icon-title-block",
+    "version": "1.0.0",
+    "title": "CTA Icon & Title",
+    "category": "common_block",
+    "icon": "cover-image",
+    "description": "Display an Icon and Title with URL.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "columnUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "alignment": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "textdomain": "cta-icon-title-block",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}

@@ -1,0 +1,30 @@
+$cta: ".cta";
+
+#{$cta} {
+	&-image {
+		img {
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+	&-column{
+		.btn-link{
+			&:hover{
+				a{
+					color: var(--wp--preset--color--secondary-100) !important;
+				}
+			}
+		}
+	}
+}
+.wp-container-core-group-is-layout {
+	@media (max-width: 1024px) {
+		gap: 25px !important;
+	}
+	@media (min-width: 576px) and (max-width: 1024px) {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+	@media (max-width: 576px) {
+		grid-template-columns: repeat(1, 1fr) !important;
+	}
+}

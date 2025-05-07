@@ -1,0 +1,28 @@
+.page-list {
+    padding: 40px 0;
+}
+
+.listings-result-container {
+    .selected-page {
+        max-height: 225px;
+        overflow: auto;
+        margin: 8px 0 0 0 !important;
+        border: 0.5px solid #000;
+        padding: 7px;
+        border-radius: 2px;
+        ul {
+            margin: 0;
+            .selected-page-item-wrap {
+                display: inline-block;
+                margin: 0 2px 2px 0;
+                padding: 1px;
+                .selected-page-item {
+                    padding: 5px;
+                    background-color: #e0e0e0;
+                    border-radius: 5px;
+                    display: inline-block;
+                  }
+            }
+        }
+    }
+}

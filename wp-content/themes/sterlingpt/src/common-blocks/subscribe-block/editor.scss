@@ -1,0 +1,21 @@
+.wp-block-herostencil-child-cta-icon-title {
+	&.no-border {
+		.cta-icon-only {
+			border: none;
+		}
+	}
+	&.align-center {
+		.cta-icon-only {
+			margin: 0 auto;
+		}
+		h5 {
+			text-align: center;
+		}
+	}
+}
+.cta-icon-only {
+	.block-editor-block-list__block .block-editor-plain-text {
+		height: 70px !important;
+	    width: 70px !important;
+	}
+}

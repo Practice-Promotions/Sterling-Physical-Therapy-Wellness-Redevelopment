@@ -1,0 +1,180 @@
+// Take away comment if want to separate file and remove _ before file name
+/* Slick Slider */
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	--webkit-touch-callout: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+
+	.slick-list {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		margin: 0;
+		padding: 0;
+
+		&:focus {
+			outline: none;
+		}
+
+		&.dragging {
+			cursor: pointer;
+			cursor: hand;
+		}
+	}
+
+	.slick-track,
+	.slick-list {
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	.slick-track {
+		position: relative;
+		left: 0;
+		top: 0;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+
+		.slick-loading & {
+			visibility: hidden;
+		}
+	}
+
+	@at-root .slick-slide {
+		height: 100%;
+		min-height: 1px;
+
+		[dir="rtl"] & {
+			float: right;
+		}
+
+		img {
+			display: block;
+		}
+
+		&.slick-loading img {
+			display: none;
+		}
+
+		display: none;
+
+		&.dragging img {
+			pointer-events: none;
+		}
+
+		.slick-initialized & {
+			display: block;
+		}
+
+		.slick-loading & {
+			visibility: hidden;
+		}
+
+		.slick-vertical & {
+			display: block;
+			height: auto;
+			border: 1px solid transparent;
+		}
+	}
+
+	.slick-dots {
+		position: relative;
+		width: 100%;
+		margin: 15px 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			margin: 0;
+			padding: 0 5px;
+			display: inline-block;
+			vertical-align: middle;
+			list-style: none;
+			line-height: 0;
+
+			button {
+				width: 16px;
+				height: 16px;
+				padding: 0;
+				font-size: 0;
+				border-width: 4px;
+				border-style: solid;
+				border-color: var(--wp--preset--color--primary-100);
+				border-radius: 100%;
+				background-color: var(--wp--preset--color--secondary-100);
+				transition: background-color ease 0.3s, opacity ease 0.3s;
+				outline: none;
+
+				&:focus,
+				&:hover {
+					outline: none;
+					cursor: pointer;
+					border-color: var(--wp--preset--color--primary-100);
+					background-color: var(--wp--preset--color--primary-100);
+				}
+
+				&:focus {
+					border: 4px solid var(--wp--preset--color--primary-100);
+					background-color: var(--wp--preset--color--primary-100);
+				}
+			}
+
+			&.slick-active button {
+				border-color: var(--wp--preset--color--secondary-100);
+				background-color: var(--wp--preset--color--secondary-100);
+			}
+		}
+	}
+
+	.slick-arrow {
+		--sArrowWidth: 40px;
+		position: absolute;
+		top: calc(50% - (var(--sArrowWidth) / 2));
+		width: var(--sArrowWidth);
+		height: var(--sArrowWidth);
+		z-index: 9;
+		padding: 8px;
+		font-size: 0;
+		color: var(--wp--preset--color--primary-100);
+		border: 3px solid var(--wp--preset--color--primary-100);
+		box-shadow: none;
+		background: none;
+		border-radius: 50%;
+		transition: all 0.3s ease;
+
+		&:focus,
+		&:hover {
+			outline: none;
+			cursor: pointer;
+			color: var(--wp--preset--color--white);
+			background-color: var(--wp--preset--color--primary-100);
+		}
+
+		&.slick-prev {
+			left: 0;
+		}
+
+		&.slick-next {
+			right: 0;
+		}
+
+		&.slick-hidden {
+			display: none;
+		}
+
+		svg {
+			fill: currentColor;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

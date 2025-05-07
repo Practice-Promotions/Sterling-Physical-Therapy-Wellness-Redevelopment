@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "newsletter-meta/block",
+	"title": "Newsletter Meta Button",
+	"icon": "id",
+	"parent": ["newsletter-list"],
+	"category": "widgets",
+	"description": "Displays custom meta information within core query loop for Newsletter.",
+	"attributes": {
+		"newsletter_url": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"usesContext": ["postId", "postType"],
+	"supports": {
+		"align": true
+	},
+	"example": {},
+	"textdomain": "newsletter-meta",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,26 @@
+.location-back-contact {
+    background-color: #e7f5fb;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    width: 1060px;
+    margin: 0 auto;
+    max-width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.location-back-contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.location-back-contact-info * {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.location-back-contact-info {
+    padding: 40px;
+}

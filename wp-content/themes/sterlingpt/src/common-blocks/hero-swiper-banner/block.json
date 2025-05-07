@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/hero-swiper-banner",
+	"version": "1.0.0",
+	"title": "Hero Swiper Banner",
+	"category": "common_block",
+	"icon": "image-flip-horizontal",
+	"description": "The Hero Swiper Banner block creates a customizable banner with editable content.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"color": {
+			"type": "string",
+			"default": "black"
+		},
+		"customClass": {
+			"type": "string",
+			"default": ""
+		},
+		"navigationEnabled": {
+			"type": "boolean",
+			"default": true
+		},
+		"paginationEnabled": {
+			"type": "boolean",
+			"default": true
+		},
+		"loop": {
+			"type": "boolean",
+			"default": true
+		},
+		"autoplayEnabled": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "hero-swiper-banner",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

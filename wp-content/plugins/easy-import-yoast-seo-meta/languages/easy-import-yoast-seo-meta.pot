@@ -1,0 +1,120 @@
+# Copyright (C) 2022 ZealousWeb
+# This file is distributed under the same license as the Easy Import Yoast SEO Meta Using CSV plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Import Yoast SEO Meta Using CSV 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-import-yoast-seo-meta\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-04-21T15:24:35+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: easy-import-yoast-seo-meta\n"
+
+#. Plugin Name of the plugin
+msgid "Easy Import Yoast SEO Meta Using CSV"
+msgstr ""
+
+#. Description of the plugin
+msgid "Easy import yoast meta using csv file."
+msgstr ""
+
+#. Author of the plugin
+msgid "ZealousWeb"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.plugin-author-url.com"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:59
+#: inc/admin/class.eiysm.admin.action.php:60
+msgid "Yoast Seo Meta Import"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:69
+#: inc/admin/class.eiysm.admin.action.php:70
+msgid "Add Yoast Seo Tags"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:202
+msgid "Check following id are not found, please check and try agian."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:204
+msgid "Check following id not found, please check and try agian."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:346
+msgid "Update your change has been made succesfully."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:372
+msgid "Upload file security issue.. Please try again."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:384
+msgid "File Format is not suported."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:395
+msgid "Import is done successfully.."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:406
+msgid "Uploaded file not have encourage data..."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:431
+msgid "Import your CSV."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:433
+msgid "Check Demo CSV "
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:435
+msgid "here.."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:439
+msgid "Upload File"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:457
+msgid "Create Yoast Seo Tags."
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:466
+#: inc/admin/class.eiysm.admin.action.php:476
+msgid "Seo Tag Name"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:467
+#: inc/admin/class.eiysm.admin.action.php:477
+msgid "Tag Value"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:468
+#: inc/admin/class.eiysm.admin.action.php:478
+msgid "Remove"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:485
+msgid "Add Yoast Tags"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.action.php:486
+msgid "Save Tags"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.filter.php:49
+msgid "Export Selected Page"
+msgstr ""
+
+#: inc/admin/class.eiysm.admin.filter.php:51
+msgid "Export Selected Posts"
+msgstr ""

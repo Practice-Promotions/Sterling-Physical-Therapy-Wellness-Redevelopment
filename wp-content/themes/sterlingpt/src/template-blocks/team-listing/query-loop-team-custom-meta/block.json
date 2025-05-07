@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "query-loop-team-custom-meta/block",
+	"title": "Query Loop Team (Custom Meta)",
+	"icon": "id",
+	"parent": ["team-listings"],
+	"category": "widgets",
+	"description": "Displays custom meta information for team within core query loop.",
+	"attributes": {
+        "team_education": {
+            "type": "string",
+            "default": ""
+        },
+        "align": {
+          "type": "string",
+          "default": "center"
+        }
+    },
+	"usesContext": ["postId", "postType"],
+	"supports": {
+		"align": true
+	},
+	"example": {},
+	"textdomain": "query-loop-team-custom-meta",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

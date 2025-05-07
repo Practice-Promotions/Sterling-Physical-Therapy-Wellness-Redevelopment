@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/accordion-block",
+	"version": "1.0.0",
+	"title": "Accordion Block",
+	"category": "common_block",
+	"icon": "format-status",
+	"description": "Create a single or two-column accordion block with smooth transitions using jQuery.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+        "items": {
+            "type": "array",
+            "default": [{ "title": "", "content": "" }]
+        },
+        "layout": { "type": "string", "default": "single" }
+    },
+	"textdomain": "accordion-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

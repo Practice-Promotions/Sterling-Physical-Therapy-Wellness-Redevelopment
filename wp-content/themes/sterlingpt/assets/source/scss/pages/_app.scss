@@ -1,0 +1,63 @@
+.app {
+	&-block {
+		@include respond-below('md-wp') {
+			padding: 30px 15px !important;
+		}
+		.app {
+			&-image {
+				@include respond-below('md-wp') {
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+// .app {
+// 	&-section {
+// 		position: relative;
+
+// 		.has-primary-medium-background-color {
+// 			@include respond-between('md', 'lg') {
+// 				padding: 55px 40px;
+// 			}
+
+// 			@include respond-below('md') {
+// 				padding: 45px 30px !important;
+// 			}
+// 		}
+
+// 		.section-header {
+// 			@include respond-between('md', 'lg') {
+// 				flex-wrap: nowrap !important;
+// 			}
+// 		}
+// 	}
+
+// 	&-content {
+// 		position: relative;
+// 		z-index: 1;
+// 	}
+
+// 	&-image {
+// 		display: none;
+
+// 		@include respond-above('md') {
+// 			display: block;
+// 			position: absolute;
+// 			bottom: 0;
+// 			right: 0;
+// 			pointer-events: none;
+// 		}
+// 	}
+
+// 	&-launch {
+// 		@include respond-between('md', 'lg') {
+// 			flex-wrap: nowrap !important;
+
+// 			img {
+// 				width: 180px !important;
+// 			}
+// 		}
+// 	}
+// }

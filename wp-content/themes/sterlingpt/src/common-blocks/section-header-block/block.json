@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/section-header-block",
+	"version": "1.0.0",
+	"title": "Section Header",
+	"category": "common_block",
+	"icon": "editor-aligncenter",
+	"description": "A block for adding a section header with a title.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+        "alignment": {
+			"type": "boolean",
+			"default": false
+		}
+    },
+	"textdomain": "section-header-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/custom-slider-block",
+	"version": "1.0.0",
+	"title": "Custom Slider Block",
+	"category": "common_block",
+	"icon": "image-flip-horizontal",
+	"description": "The Custom Slider block creates a customizable banner with editable content.",
+	"supports": {
+        "html": false
+    },
+    "attributes": {
+        "content": {
+            "type": "string",
+            "default": ""
+        },
+        "color": {
+            "type": "string",
+            "default": "black"
+        },
+        "customClass": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"textdomain": "custom-slider-block",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,121 @@
+$job: ".job";
+
+#{$job} {
+	&-section {
+		
+
+		#{$job} {
+			&-date {
+				font-size: var(--wp--preset--font-size--text-xs);
+
+				span {
+					color: var(--wp--preset--color--secondary-100);
+				}
+			}
+
+			&-status-type {
+				
+				margin-top: 8px;
+				line-height: 1;
+				align-items: center;
+			}
+
+			&-status {
+				&.closed {
+					span {
+						background: var(--wp--preset--color--alert);
+						color: var(--wp--preset--color--white);
+						padding: 5px;
+						display: inline-block;
+						margin: 5px 0;
+					}
+				}
+
+				&.open {
+					span {
+						background: var(--wp--preset--color--success);
+						color: var(--wp--preset--color--white);
+						padding: 5px;
+						display: inline-block;
+						margin: 5px 0;
+					}
+				}
+			}
+
+			&-type {
+				border-left: 1px solid var(--wp--preset--color--gray-3);
+				// padding-left: 12px;
+				// margin-left: 12px;
+				margin-bottom: 10px;
+				span{
+					padding: 0.38rem;
+					display: inline-block;
+					color: #FFFFFF;
+					font-size: 0.88rem;
+					font-weight: 400;
+					line-height: 1.25;
+					text-transform: uppercase;
+					background-color: var(--wp--preset--color--primary-100);
+				}
+			}
+
+			&-location {
+				margin-top: 8px;
+			}
+
+			&-content {
+				margin-top: 12px;
+				a {
+					color: var(--wp--preset--color--primary-100);
+					font-size: 28px;
+					line-height: 0;
+					display: inline-block;
+					margin-left: 10px;
+					&:hover {
+						color: var(--wp--preset--color--secondary-100);
+					}
+				}
+			}
+
+			&-info {
+				margin-top: 26px;
+				text-align: right;
+
+				
+			}
+		}
+	}
+
+	&-item {
+		background: var(--wp--preset--color--white);
+		padding: 24px;
+		border-radius: 8px;
+		border: 1px solid var(--wp--preset--color--primary-100);
+		margin: 20px 0;
+
+		&-inner{
+			display: grid;
+			grid-gap: 0.94rem;
+			align-items: flex-start;
+			@media (min-width: 640px){
+				grid-template-columns: 2fr 2fr 1fr;
+			}
+			}
+		h3 {
+			margin: 8px 0 0 0;
+			font-weight: 500;
+			font-size: 20px;
+
+			svg {
+				position: relative;
+				top: -2px;
+				vertical-align: middle;
+				margin-right: 12px;
+			}
+		}
+
+		strong {
+			color: var(--wp--preset--color--gray-400);
+		}
+	}
+}

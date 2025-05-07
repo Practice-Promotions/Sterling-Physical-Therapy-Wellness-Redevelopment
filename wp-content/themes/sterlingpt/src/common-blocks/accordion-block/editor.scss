@@ -1,0 +1,34 @@
+$accordion: ".accordion";
+
+#{$accordion} {
+	&-item {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+
+		.rich-text {
+			font-size: 14px;
+			margin: 0;
+			padding: 4px 8px;
+			min-width: 1px;
+			border: 1px solid #8c8f94;
+			min-height: 166px;
+			border-radius: 4px;
+			white-space: pre-wrap;
+		}
+
+		.delete {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: auto;
+			padding: 0;
+
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.ebook-list {
+	li {
+		&:nth-child(even) {
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+				background-color: var(--wp--preset--color--gray-100);
+			}
+
+			.ebook-item {
+				flex-direction: row-reverse;
+			}
+		}
+
+		.ebook-item {
+			z-index: 1;
+			position: relative;
+			justify-content: space-around;
+		}
+	}
+}
+
+.ebook-popup {
+	display: none;
+	max-width: 600px;
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "ppcoreblocks/testimonial-block",
+	"title": "Testimonial Relationship Block",
+	"category": "common_block",
+	"icon": "format-quote",
+	"description": "Fetches and displays posts from our testimonial posttype with published status",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"query": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "testimonial-block",
+	"style": "file:./style-index.css",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

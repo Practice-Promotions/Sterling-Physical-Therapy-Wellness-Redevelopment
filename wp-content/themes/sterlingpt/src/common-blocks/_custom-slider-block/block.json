@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/custom-slider-block",
+	"title": "Custom Slider/Grid Block",
+	"icon": "images-alt2",
+	"category": "common_block",
+	"attributes": {
+		"enableSlider": {
+			"type": "boolean",
+			"default": false
+		},
+		"slidesToShow": {
+			"type": "number",
+			"default": 3
+		},
+		"slidesToScroll": {
+			"type": "number",
+			"default": 1
+		},
+		"navigationEnabled": {
+			"type": "boolean",
+			"default": true
+		},
+		"paginationEnabled": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"editorScript": "file:./edit.js",
+	"editorStyle": "file:./style.css",
+	"style": "file:./style.css",
+	"render": "file:./save.js",
+	"supports": {
+	"align": true
+	}
+}

@@ -1,0 +1,205 @@
+$location: ".location";
+
+#{$location} {
+	&-filter-part {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: 576px) {
+			flex-direction: column;
+			gap: 16px;
+		}
+		.location-specialty-filter {
+			@media (max-width: 576px) {
+				width: 100%;
+			}
+			@media (min-width: 577px) and (max-width: 767px) {
+				width: 48%;
+			}
+			@media (min-width: 768px) {
+				width: 360px;
+			}
+			background-color: var(--wp--preset--color--primary-200);
+		}
+		.pac-card {
+			position: relative;
+			@media (max-width: 576px) {
+				width: 100%;
+			}
+			@media (min-width: 577px) and (max-width: 767px) {
+				width: 48%;
+			}
+			@media (min-width: 768px) {
+				width: 360px;
+			}
+			input {
+				width: 100%;
+				background: var(--wp--preset--color--primary-200);
+				padding-right: 40px;
+			}
+			svg {
+				position: absolute;
+				top: 12px;
+				right: 12px;
+				pointer-events: none;
+			}
+		}
+	}
+	&-search {
+		@media (min-width: 993px) {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			gap: 25px;
+		}
+		margin-top: 48px !important;
+		#map {
+			@media (max-width: 992px) {
+				width: 100%;
+				height: 450px;
+			}
+			@media (min-width: 993px) and (max-width: 1200px) {
+				width: 35%;
+			}
+			@media (min-width: 1201px) {
+				width: 50%;
+			}
+			@media (min-width: 993px) {
+				height: 860px;
+			}
+			border-radius: 8px;
+			.gm-style-iw {
+			    max-width: 150px !important;
+			    padding: 10px !important;
+			}
+			button.gm-ui-hover-effect {
+			    position: absolute !important;
+			    right: 0;
+			    width: auto !important;
+			    height: auto !important;
+				span {
+				    margin: 0 !important;
+				}
+			}
+			.gm-style-iw-ch { display: none; }
+		}
+		&-wrap {
+			@media (max-width: 992px) {
+				margin-top: 40px;
+			}
+			@media (min-width: 993px) and (max-width: 1200px) {
+				width: 65%;
+			}
+			@media (min-width: 1201px) {
+				width: 50%;
+			}
+		}
+		span.cluster-number {
+		    background: var(--wp--preset--color--white);
+		    border-radius: 100%;
+		    width: 40px;
+		    height: 40px;
+		    display: inline-block;
+		    font-size: 20px;
+		    font-weight: 400;
+		    line-height: 2;
+		    position: absolute;
+		    top: 10px;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		}
+		#{$location} {
+			&-listing {
+				@media (max-width: 992px) {
+					height: 600px;
+				}
+				@media (min-width: 993px) {
+					height: 860px;
+				}
+				&-item {
+					@media (min-width: 577px) {
+						display: flex;
+					}
+					background: var(--wp--preset--color--primary-200);
+					border-radius: 8px;
+					+ #{$location} {
+						&-listing-item {
+							margin-top: 20px;
+						}
+					}
+				}
+				&-info {
+					@media (min-width: 577px) and (max-width: 640px) {
+						width: calc(100% - 200px);
+					}
+					@media (min-width: 641px) {
+						width: calc(100% - 220px);
+					}
+				}
+				&-wrap {
+					@media (max-width: 576px) {
+					    grid-template-columns: 1fr;
+					}
+				}
+				.mCSB_scrollTools {
+					width: 5px;
+					opacity: 1;
+					background: var(--wp--preset--color--primary-200);
+					border-radius: 2.5px;
+					.mCSB_dragger {
+						&.mCSB_dragger_onDrag .mCSB_dragger_bar {
+							background: var(--wp--preset--color--primary-100);
+						}
+						.mCSB_dragger_bar {
+							width: 5px;
+							background: var(--wp--preset--color--primary-100);
+							&:hover {
+								background: var(--wp--preset--color--primary-100);
+							}
+						}
+					}
+					.mCSB_draggerRail {
+						width: 5px;
+						background: var(--wp--preset--color--primary-200);
+					}
+				}
+			}
+			&-media {
+				@media (min-width: 576px) {
+					aspect-ratio: 4/2;
+				}
+				@media (min-width: 577px) and (max-width: 640px) {
+					width: 200px;
+				}
+				@media (min-width: 641px) {
+					width: 220px;
+				}
+				@media (min-width: 577px) {
+					aspect-ratio: 1/1;
+				}
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			&-action {
+				display: flex;
+				gap: 16px;
+				padding-top: 22px;
+				@media (max-width: 577px) {
+					flex-direction: column;
+				}
+				> * {
+					@media (max-width: 576px) {
+						width: 100%;
+					}
+					@media (min-width: 577px) {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}

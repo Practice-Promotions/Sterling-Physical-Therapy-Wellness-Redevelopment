@@ -1,0 +1,169 @@
+/** Theme popup styles */
+$theme-popup: ".theme-popup";
+
+#{$theme-popup} {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: transparent;
+
+	&-wrapper {
+		@include flex-center;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		cursor: pointer;
+		width: 24px;
+        height: 24px;
+
+		&:hover {
+			color: var(--wp--preset--color--gray-100);
+		}
+
+		.icon-close {
+			color: var(--wp--preset--color--secondary-100);
+			width: 100%;
+			height: 100%;
+            display: block;
+            font-size: 22px;
+		}
+	}
+
+	.fancybox-close-small {
+		display: none;
+	}
+
+	&-inner {
+		position: relative;
+		overflow: auto;
+		max-width: 650px;
+		max-height: 80vh;   
+		padding: 30px;
+		background-color: var(--wp--preset--color--gray-200);
+		border: 1px solid var(--wp--preset--color--gray-100);
+		@include mobile() {
+			padding: 30px 15px;
+		}
+	}
+
+	&-alert {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include flex-center();
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		background-color: var(--wp--preset--color--white);
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.4s all;
+		pointer-events: none;
+
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		.button-group {
+			@include flex-center();
+			flex-wrap: wrap;
+
+			.btn {
+				margin: 8px;
+			}
+		}
+	}
+
+	&-btn {
+		display: none;
+	}
+}
+
+
+/** Ebook theme popup styles */
+$ebook-popup: ".ebook-theme-popup";
+
+#{$ebook-popup} {
+	display: none;
+	text-align: center;
+	width: auto;
+
+	.fancybox-button {
+		svg {
+			fill: var(--wp--preset--color--white);
+
+			path {
+				fill: inherit;
+			}
+		}
+	}
+
+	&-inner {
+		max-width: 770px;
+		.button[data-fancybox-close]{
+			width: 28px;
+			height: 28px;
+			background-size: cover;
+		}
+	}
+
+	&-info {
+		margin-bottom: 20px;
+		color: var(--wp--preset--color--white);	
+
+		h2 {
+			color: var(--wp--preset--color--white);
+			text-transform: uppercase;
+			@include respond-above('md') {
+				font-size: 34px;
+			}
+		}
+
+		p {
+			color: var(--wp--preset--color--white);
+		}
+		*{
+			color: var(--wp--preset--color--white);
+		}
+	}
+
+	&-wrapper {
+		@include flex-center;
+		flex-wrap: wrap;
+
+		#{$ebook-popup} {
+			&-image {
+				width: 280px;
+			}
+
+			&-content {
+				width: 100%;
+				padding: 15px;
+				background-color: var(--wp--preset--color--white);
+				@include respond-above('md') {
+					width: calc(100% - 280px);
+				}
+
+				.nf-error-msg {
+					display: none;
+				}
+				h3{
+					@include respond-above('md') {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	&-btn {
+		display: none;
+	}
+}

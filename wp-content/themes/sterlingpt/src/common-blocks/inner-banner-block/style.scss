@@ -1,0 +1,12 @@
+.inner-banner {
+	padding: 0 calc((100% - var(--wp--style--global--content-size))/2) !important;
+	h1 {
+		margin: 15px 0 0 0;
+		&.wp-block-query-title {
+			font-weight: 600;
+			span {
+				font-style: normal;
+			}
+		}
+	}
+}

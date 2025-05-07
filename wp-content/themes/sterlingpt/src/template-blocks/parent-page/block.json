@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/parent-page",
+	"version": "1.0.0",
+	"title": "Parent Page",
+	"category": "archive_template_block",
+	"icon": "networking",
+	"description": "Displays child pages of the current parent page, helping organize and navigate hierarchical content easily.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "parent-page",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

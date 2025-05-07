@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/contact-single-location",
+	"version": "1.0.0",
+	"title": "Contact Single Location",
+	"category": "archive_template_block",
+	"icon": "networking",
+	"description": "Cotact single Location With Contact Page Layout",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "contact-single-location",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

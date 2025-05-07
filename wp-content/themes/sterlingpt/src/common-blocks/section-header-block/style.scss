@@ -1,0 +1,27 @@
+.section-header {
+    .wp-block-column {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            order: -1;
+        }
+    }
+
+    h2 {
+        margin: 0 0 15px;
+        color: var(--wp--preset--color--primary-100);
+    }
+
+    h3 {
+        margin: 0 0 10px;
+        color: var(--wp--preset--color--secondary-100);
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    p:last-of-type {
+        margin: 0;
+    }
+}

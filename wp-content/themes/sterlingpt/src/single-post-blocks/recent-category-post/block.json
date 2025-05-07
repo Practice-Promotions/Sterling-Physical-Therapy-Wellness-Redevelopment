@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/recent-category-post",
+	"version": "1.0.0",
+	"title": "Recent category Post",
+	"category": "single_post_block",
+	"icon": "welcome-write-blog",
+	"description": "The 'Recent Category Post' block displays the latest posts from a specific category, making it easy to highlight recent content from selected topics.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "recent-category-post",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

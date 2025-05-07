@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/cta-image-title-description-block",
+	"version": "1.0.0",
+	"title": "CTA Image, Title & description",
+	"category": "common_block",
+	"icon": "text-page",
+	"description": "A block for creating a call-to-action section with an image, title, and description, ideal for highlighting promotions or key messages.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "cta-image-title-description-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

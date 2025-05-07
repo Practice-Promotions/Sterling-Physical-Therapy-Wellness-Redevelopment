@@ -1,0 +1,53 @@
+.gallery-with-popup{
+    .wp-block-image{
+        flex-grow: initial !important;
+        a{
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                background-color: rgba(0, 0, 0, 0.2);
+                transition: 0.4s all;
+                content: "";
+                pointer-events: none;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+
+            &::after {
+                content: "⛶";
+                color: var(--wp--preset--color--white);
+                font-size: 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                z-index: 1;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s all;
+            }
+
+            &:hover {
+                &::after,
+                &::before {
+                    opacity: 1;
+                }
+            }
+            img{
+                width: 100% !important;
+                height: 100% !important;
+                aspect-ratio: 400 / 400;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

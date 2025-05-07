@@ -1,0 +1,45 @@
+@use 'sass:math';
+
+.staff-member-list{
+	.staff-member-sidebar{
+		@include respond-between('lg','xl'){
+			flex-basis: 40% !important;
+		}
+	}
+	.staff-member-content{
+		@include respond-between('lg','xl'){
+			flex-basis: 60% !important;
+		}
+		@include respond-below('md-wp'){
+			margin-top: 30px;
+		}
+		.wp-block-columns{
+			padding: 0;
+		}
+	}
+	.wp-block-post-featured-image{
+		img{
+			object-position: top;
+		}
+	}
+	.wp-block-social-link:hover {
+	    transform: scale(1.1);
+	    color: var(--wp--preset--color--primary-100) !important;
+	}
+	> .wp-block-columns{
+		justify-content: space-between;
+	}
+	.team-appointment{
+		.gform_wrapper.gravity-theme .gform_validation_errors>h2 .gform-icon{
+			display: none;
+		}
+	}
+	.team-contact-info{
+		p{
+			margin-bottom: 18px;
+			color: var(--wp--preset--color--black);
+			position: relative;
+			text-align: center;
+		}
+	}
+}

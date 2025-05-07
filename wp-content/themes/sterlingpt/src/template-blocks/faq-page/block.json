@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/faq-page",
+    "version": "1.0.0",
+    "title": "FAQ Page",
+    "category": "archive_template_block",
+    "icon": "format-chat",
+    "description": "Displays an FAQ list in an accordion style, allowing users to expand and collapse answers easily.",
+    "attributes": {
+		"faqSelectType": {
+			"type": "string",
+			"default": ""
+		},
+		"faqLayoutType": {
+			"type": "string",
+			"default": ""
+		}
+	},
+    "supports": {
+        "html": false
+    },
+    "textdomain": "faq-page",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

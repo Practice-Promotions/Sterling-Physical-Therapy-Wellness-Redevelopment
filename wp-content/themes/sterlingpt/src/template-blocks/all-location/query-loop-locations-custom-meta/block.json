@@ -1,0 +1,93 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.0.1",
+	"name": "query-loop-locations-custom-meta/block",
+	"title": "Query Loop (Locations Meta)",
+	"icon": "id",
+	"parent": ["all-location"],
+	"category": "widgets",
+	"description": "Displays custom meta information within core query loop for locations.",
+	"attributes": {
+		"location_link": {
+			"type": "string",
+			"default": ""
+		},
+		"location_title": {
+			"type": "string",
+			"default": ""
+		},
+		"location_custom_title": {
+			"type": "string",
+			"default": ""
+		},
+		"location_phone_number": {
+			"type": "string",
+			"default": ""
+		},
+		"location_fax_number": {
+			"type": "string",
+			"default": ""
+		},
+		"location_email": {
+			"type": "string",
+			"default": ""
+		},
+		"location_address": {
+			"type": "string",
+			"default": ""
+		},
+		"location_map_link": {
+			"type": "string",
+			"default": ""
+		},
+		"location_working_hours": {
+			"type": "string",
+			"default": ""
+		},
+		"align": {
+			"type": "string",
+			"default": "center"
+		},
+		"enable_location_phone_number": {
+			"type": "boolean",
+			"default": true
+		},
+		"enable_location_fax_number": {
+			"type": "boolean",
+			"default": true
+		},
+		"enable_location_email": {
+			"type": "boolean",
+			"default": true
+		},
+		"enable_location_address": {
+			"type": "boolean",
+			"default": true
+		},
+		"enable_location_map_link": {
+			"type": "boolean",
+			"default": true
+		},
+		"enable_location_working_hours": {
+			"type": "boolean",
+			"default": false
+		},
+		"enable_address_label": {
+			"type": "boolean",
+			"default": false
+		},
+		"enable_working_hours_label": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"usesContext": ["postId", "postType"],
+	"supports": {
+		"align": true
+	},
+	"example": {},
+	"textdomain": "query-loop-locations-custom-meta",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

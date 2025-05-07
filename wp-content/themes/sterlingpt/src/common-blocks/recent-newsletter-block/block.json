@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/recent-newsletter-block",
+	"version": "1.0.0",
+	"title": "Recent Newsletter",
+	"category": "common_block",
+	"icon": "excerpt-view",
+	"description": "The Recent Newsletter block showcases the most recent newsletter, ideal for quickly displaying updated content on any page.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "recent-newsletter-block",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

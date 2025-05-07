@@ -1,0 +1,288 @@
+$location: ".location";
+
+#{$location} {
+	&-contact {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: var(--wp--preset--color--gray-100);
+		overflow: hidden;
+		border-radius: 8px;
+		position: relative;
+		width: 1060px;
+		margin: 0 auto;
+		max-width: 100%;
+		z-index: 1;
+
+		&-info {
+			width: 100%;
+			padding: 38px 48px;
+			position: relative;
+
+			@include respond-above('lg') {
+				width: 50%;
+			}
+
+			.social-media {
+
+				@include respond-above('lg') {
+					position: absolute;
+					right: -24px;
+					top: 50%;
+					transform: translate(0, -50%);
+				}
+
+				ul {
+					list-style: none;
+
+					@include respond-above('lg') {
+						display: inline-block;
+					}
+
+					li {
+						padding: 8px 0;
+
+						a {
+							width: 48px;
+							height: 48px;
+							background-color: var(--wp--preset--color--white);
+							padding: 5px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							line-height: 1;
+							border-radius: 8px;
+							color: var(--wp--preset--color--secondary-100);
+							box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
+						}
+					}
+				}
+			}
+
+			h2 {
+				font-weight: 500;
+				margin-bottom: 16px;
+				line-height: 1.33;
+				color: var(--wp--preset--color--primary-100);
+			}
+
+			h4 {
+				font-size: 20px;
+				font-weight: 500;
+				margin-bottom: 8px;
+			}
+
+			p,
+			.location-hours {
+				margin-bottom: 10px;
+				color: $gray-400;
+				padding-left: 30px;
+				position: relative;
+
+				&:before {
+					position: absolute;
+					color: var(--wp--preset--color--secondary-100);
+					font-size: 20px;
+					line-height: 1;
+					margin-right: 0;
+					top: 2px;
+					left: 0;
+				}
+
+				a {
+					color: inherit;
+					font-weight: inherit;
+
+					&:hover {
+						color: var(--wp--preset--color--secondary-100);
+					}
+				}
+			}
+		}
+
+		&-map {
+			width: 100%;
+
+			@include respond-above('lg') {
+				width: 50%;
+			}
+
+			iframe {
+				width: 100%;
+				height: 100%;
+
+				@include respond-below('lg') {
+					height: 350px;
+				}
+			}
+		}
+
+		&-wrap {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			@include mobile() {
+				grid-template-columns: none;
+			}
+		}
+	}
+
+	// Location Listing
+	&-listing {
+		@include respond-below('lg') {
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+
+		li {
+			padding: 0;
+		}
+
+		&-item {
+			overflow: hidden;
+		}
+
+		&-media {
+			img {
+				width: 100%;
+				border-radius: 8px 8px 0 0;
+			}
+		}
+
+		&-info {
+			padding: 24px;
+			margin: 0;
+
+			&-detail{
+				padding: 20px;
+			}
+
+
+			&.contact-single-location {
+				padding: 0;
+
+				.location-map{
+					iframe {
+						width: 100%;
+						height: 250px;
+					}
+				}			
+
+				.business-hours {
+					margin-top: 15px;
+				}
+
+				.location-listing-action {
+					padding-bottom: 10px;
+				}
+			}
+
+			h2 {
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 16px;
+				line-height: 1.33;
+				color: var(--wp--preset--color--primary-100);
+			}
+
+			h4 {
+				font-size: 20px;
+				font-weight: 500;
+				margin-bottom: 8px;
+			}
+
+			p {
+				margin-bottom: 10px;
+				color: $gray-400;
+				padding-left: 30px;
+				position: relative;
+
+				&:before {
+					position: absolute;
+					color: var(--wp--preset--color--secondary-100);
+					font-size: 20px;
+					line-height: 1;
+					margin-right: 0;
+					top: 4px;
+					left: 0;
+				}
+
+				a {
+					color: inherit;
+					font-weight: inherit;
+
+					&:hover {
+						color: var(--wp--preset--color--secondary-100);
+					}
+				}
+			}
+		}
+
+		&-wrap {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&-action {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+			padding-top: 30px;
+
+			@include mobile() {
+				grid-template-columns: none;
+			}
+		}
+	}
+
+	&-listing-single {
+		.location-listing-info {
+			padding: 0;
+		}
+
+		.business-hours {
+			margin-top: 35px;
+		}
+	}
+}
+
+.contact-form-col {
+	box-shadow: 0 3px 50px rgba(0, 0, 0, .05);
+	border-radius: 8px;
+	position: relative;
+	margin-top: -77px !important;
+	z-index: 1;
+
+	@include respond-above('xl') {
+		margin-top: -277px !important;
+	}
+}
+
+.location-single-map {
+	iframe {
+		width: 100%;
+		height: 488px;
+	}
+}
+
+// Common Social Media Location
+.social-media {
+	ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		gap: 15px;
+
+		li {
+			a {
+				font-size: 24px;
+				line-height: 1;
+				color: var(--wp--preset--color--secondary-100);
+
+				&:hover {
+					color: var(--wp--preset--color--primary-100);
+				}
+			}
+		}
+	}
+}

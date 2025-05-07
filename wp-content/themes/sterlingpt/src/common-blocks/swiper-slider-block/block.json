@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/swiper-slider-block",
+	"version": "1.0.0",
+	"title": "Swiper Slider",
+	"category": "common_block",
+	"icon": "image-flip-horizontal",
+	"description": "The Hero Banner block creates a customizable banner with editable content.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"slidesToShow": {
+		"type": "number",
+		"default": 1
+		},
+		"slidesToScroll": {
+		"type": "number",
+		"default": 1
+		},
+		"autoSlide": {
+		"type": "boolean",
+		"default": false
+		},
+		"navigation": {
+		"type": "boolean",
+		"default": true
+		},
+		"pagination": {
+		"type": "boolean",
+		"default": true
+		},
+		"infinite": {
+		"type": "boolean",
+		"default": true
+		},
+		"effect": {
+		"type": "string",
+		"default": "slide"
+		}
+	},
+	"textdomain": "swiper-slider-block",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

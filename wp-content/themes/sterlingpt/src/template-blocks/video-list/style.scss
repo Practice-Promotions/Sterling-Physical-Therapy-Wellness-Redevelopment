@@ -1,0 +1,69 @@
+$video: ".video";
+
+#{$video} {
+	&-listing {
+		display: grid;
+		@media (max-width: 576px) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 30px;
+		}
+		@media (min-width: 577px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 40px;
+		}
+	}
+	&-media {
+		position: relative;
+		padding-top: 60%;
+	    border-radius: 8px;
+	    overflow: hidden;
+		figure {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.20);
+			pointer-events: none;
+		}
+
+		&:hover{
+			.icon-play {
+				background: var(--wp--preset--color--white);
+				color: var(--wp--preset--color--primary-100);
+			}
+		}
+	}
+
+	&-body {
+		h2 {
+			color: var(--wp--preset--color--black);
+			margin: 24px 0 0 0;
+		}
+	}
+}
+
+.fancybox-slide--video {
+	.fancybox-content {
+		width: 61% !important;
+	    overflow: hidden;
+	    border-radius: 16px;
+	}
+}

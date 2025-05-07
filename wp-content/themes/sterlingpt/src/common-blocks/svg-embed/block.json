@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "ppcoreblocks/svg-embed",
+  "title": "SVG Embed",
+  "category": "media",
+  "icon": "format-image",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "svg-embed",
+  "editorScript": "file:index.js"
+}

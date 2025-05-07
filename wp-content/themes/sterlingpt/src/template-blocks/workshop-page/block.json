@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/workshop-page",
+    "version": "1.0.0",
+    "title": "Workshop page",
+    "category": "archive_template_block",
+    "icon": "editor-paste-word",
+    "description": "The 'Workshop Page' block showcases a collection of workshops, making it easy to display and promote upcoming events.",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "workshop-page",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

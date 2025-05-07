@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ppcoreblocks/human-body-block",
+	"version": "1.0.0",
+	"title": "Human Body",
+	"category": "common_block",
+	"icon": "universal-access",
+	"description": "The 'Human Body' block visually represents different parts of the human body, allowing you to easily display and highlight anatomy-related content on your page.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "human-body",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,53 @@
+// $hero-banner: ".hero-banner";
+//
+// #{$hero-banner} {
+// 	&-section {
+// 		position: relative;
+//
+// 		.slick-slider {
+// 			.slick-dots {
+// 				position: absolute;
+// 				bottom: 48px;
+// 				margin: 0;
+// 			}
+// 		}
+// 	}
+//
+// 	&-item {
+// 		position: relative;
+// 		display: flex !important;
+// 		min-height: 75vh !important;
+//
+// 		@media(max-width: 992px) {
+// 			min-height: 60vh !important;
+// 		}
+// 	}
+//
+// 	&-content {
+// 		z-index: 1;
+// 		position: relative;
+// 		align-items: center !important;
+// 		padding: 0 calc((100% - var(--wp--style--global--content-size) + 40px)/2) !important;
+// 	}
+// }
+
+.custom-slider-grid.grid-layout .slider-item {
+	border: 2px dashed #ddd;
+	padding: 20px;
+	background: #fafafa;
+}
+
+.custom-slider-grid.swiper .slider-item {
+	width: auto !important;
+	flex-shrink: 0;
+}
+
+.custom-slider-grid.has-navigation .swiper-button-next,
+.custom-slider-grid.has-navigation .swiper-button-prev {
+	display: block;
+}
+
+.custom-slider-grid.no-navigation .swiper-button-next,
+.custom-slider-grid.no-navigation .swiper-button-prev {
+	display: none;
+}

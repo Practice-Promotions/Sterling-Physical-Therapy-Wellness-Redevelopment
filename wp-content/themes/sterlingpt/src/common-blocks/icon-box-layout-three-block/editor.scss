@@ -1,0 +1,16 @@
+$cta: ".cta";
+.icon-box-layout-three {
+	#{$cta} {
+		&-icon {
+			position: relative;
+			bottom: 0px;
+			right: 0px;
+			opacity: 0.1;
+			transition: 0.4s all;
+
+			&.is-selected {
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/cta-popup-link-block",
+    "version": "1.0.0",
+    "title": "CTA Popup and Link Component",
+    "category": "common_block",
+    "icon": "admin-links",
+    "description": "Show Anchor Link or Popup Element.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "linkType": {
+            "type": "string",
+            "default": "page"
+        },
+        "pageLink": {
+            "type": "string",
+            "default": ""
+        },
+        "externalLink": {
+            "type": "string",
+            "default": ""
+        },
+        "selectionType": {
+            "type": "string",
+            "default": "page-or-link"
+        },
+        "popupId": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "textdomain": "cta-popup-link-block",
+    "editorScript": "file:./index.js"
+}

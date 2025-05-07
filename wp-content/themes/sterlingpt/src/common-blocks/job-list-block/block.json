@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "ppcoreblocks/job-list-block",
+    "version": "1.0.0",
+    "title": "Job List",
+    "category": "common_block",
+    "icon": "index-card",
+    "description": "Displays a dynamic list of job posts from the 'Job' post type with customizable layout and filtering options.",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "job-list-block",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

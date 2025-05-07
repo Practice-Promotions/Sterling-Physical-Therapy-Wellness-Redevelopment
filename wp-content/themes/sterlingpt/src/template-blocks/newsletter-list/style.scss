@@ -1,0 +1,42 @@
+// .newsletter-list ul {
+// 	display: grid;
+// 	grid-template-columns: repeat(2, 1fr);
+// 	gap: 40px;
+
+// 	@media (min-width: 1024px) and (max-width: 1200px) {
+// 		gap: 14px;
+// 	}
+
+// 	li {
+// 		margin-top: 0;
+
+// 		@media (max-width: 1024px) {
+// 			h3 {
+// 				font-size: 19px !important;
+// 			}
+// 		}
+
+// 		figure {
+// 			margin: 0;
+
+// 			img {
+// 				border-radius: 8px 8px 0 0;
+// 				aspect-ratio: 4/2.26;
+// 			}
+// 		}
+
+// 		.wp-block-group {
+// 			text-align: right;
+
+// 		}
+
+// 		h3,
+// 		.post-date {
+// 			text-align: left;
+// 		}
+
+// 		.wp-block-read-more {
+// 			display: inline-block;
+// 		}
+// 	}
+// }
