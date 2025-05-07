@@ -2,8 +2,8 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 // font family
-$font-family-base: var(--wp--preset--font-family--poppins) !default;
-$font-family-hgroup: var(--wp--preset--font-family--poppins) !default;
+$font-family-base: var(--wp--preset--font-family--raleway) !default;
+$font-family-hgroup: var(--wp--preset--font-family--raleway) !default;
 $icon-family: "herostencil2k24" !important;
 
 // body contect text size
@@ -21,8 +21,6 @@ $white: var(--wp--preset--color--white) !default;
 $black: var(--wp--preset--color--black) !default;
 $gray-100: var(--wp--preset--color--gray-100) !default;
 $gray-200: var(--wp--preset--color--gray-200) !default;
-$gray-300: var(--wp--preset--color--gray-300) !default;
-$gray-400: var(--wp--preset--color--gray-400) !default;
 
 // Body color
 $body-bg: $white !default;

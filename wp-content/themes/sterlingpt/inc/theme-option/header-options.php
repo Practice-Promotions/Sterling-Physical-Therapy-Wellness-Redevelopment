@@ -230,7 +230,7 @@ function header_button_data() {
 		if (!empty($call_cta_list) && is_array($call_cta_list)) {
 			if (count($call_cta_list) > 1) {
 				echo '<li class="call multi-call">'.
-					'<a href="javascript:void(0);" class="btn" role="button">'. 
+					'<a href="javascript:void(0);" class="btn blue" role="button">'. 
                         '<span class="icon-phone"></span>'.
                         '<span class="text-number">'. esc_html($CallCtaText) .'</span>'.
                     '</a>'.
@@ -248,7 +248,7 @@ function header_button_data() {
 				$item = $call_cta_list[0];
 				if (!empty($item['call_cta_name']) && !empty($item['call_cta_tel_num'])) {
 					echo '<li class="call single-call">'.
-						'<a href="tel:'. preg_replace( '/[^0-9]/', '', $item['call_cta_tel_num'] ) .'" class="btn " role="button">'.
+						'<a href="tel:'. preg_replace( '/[^0-9]/', '', $item['call_cta_tel_num'] ) .'" class="btn blue" role="button">'.
                             '<span class="icon-phone"></span>'.
 							'<span class="text-number">'.
 								esc_html($CallCtaText) .
@@ -274,7 +274,7 @@ function header_button_data() {
 		if (!empty($review_cta_list) && is_array($review_cta_list)) {
 			if (count($review_cta_list) > 1) {
 				echo '<li class="review">'.
-					'<a href="javascript:void(0);" class="btn" role="button">'. esc_html($ReviewCtaText) .'</a>'.
+					'<a href="javascript:void(0);" class="btn " role="button">'. esc_html($ReviewCtaText) .'</a>'.
 					'<ul class="quick-dropdown">';
 					foreach ($review_cta_list as $item) {
 						if (!empty($item['review_cta_name']) && !empty($item['review_cta_link'])) {
@@ -289,7 +289,7 @@ function header_button_data() {
 				$item = $review_cta_list[0];
 				if (!empty($item['review_cta_name']) && !empty($item['review_cta_link'])) {
 					echo '<li class="review">'.
-						'<a href="'. esc_attr($item['review_cta_link']) .'" class="btn " role="button">'. esc_html($ReviewCtaText) .'</a>'.
+						'<a href="'. esc_attr($item['review_cta_link']) .'" class="btn outline" role="button">'. esc_html($ReviewCtaText) .'</a>'.
 					'</li>';
 				}
 			}

@@ -49,15 +49,15 @@ header {
 	@include respond-below('lg') {
 		.hamburger {
 			cursor: pointer;
-			width: 40px;
-			height: 40px;
-			padding: 7px;
+			width: 43px;
+			height: 43px;
+			padding: 9px;
 			display: block !important;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
 			border-radius: var(--wp--custom--settings-key--border-radius-button);
-			background-color: var(--wp--preset--color--primary-100);
+			background-color: var(--wp--preset--color--tertiary-100);
 
 			span {
 				width: 100%;
@@ -90,7 +90,7 @@ header {
 				width: 100%;
 				z-index: 999999;
 				padding: 0 !important;
-				background-color: var(--wp--preset--color--gray-100) !important;
+				background-color: var(--wp--preset--color--secondary-100) !important;
 
 				li {
 					width: 100%;
