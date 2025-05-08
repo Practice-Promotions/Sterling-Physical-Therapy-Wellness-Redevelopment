@@ -508,3 +508,123 @@ ul {
 		transform: rotate(360deg);
 	}
 }
+
+
+/** Team section Home style */
+.team-section{
+	&-wrapper{
+		.team-content-part{
+			.wp-block-cover__inner-container{
+				max-width: 460px;
+				margin: 0 0 0 auto;
+				width: 100%;
+				@include respond-above('lg'){
+					padding-right: 76px;
+				}
+			}
+		}
+		.team-slider-part{
+			@include respond-above('lg'){
+				padding-right: calc((100% - var(--wp--style--global--content-size)) / 2);
+			}
+			.wp-block-cover{
+				
+				@include respond-above('lg'){
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+				.wp-block-cover__image-background{
+					@include respond-above('lg'){
+						display: none;
+					}
+				}
+				.wp-block-cover__background{
+					@include respond-above('lg'){
+						display: none;
+					}
+				}
+			}
+			.team-slider-inner{
+				.team-slider-listing{
+					display: block !important;
+					@include respond-above('lg'){
+						padding-left: 84px;
+						.slick-arrow {
+							width: 70px;
+							height: 70px;
+							border: 15px solid var(--wp--preset--color--primary-100);
+							background: var(--wp--preset--color--white);
+							color: var(--wp--preset--color--secondary-100);
+							&:focus,
+							&:hover {
+								background: var(--wp--preset--color--secondary-100);
+								color: var(--wp--preset--color--white);
+							}
+
+							&.slick-prev {
+								left: -35px;
+								top: 35%;
+							}
+							
+							&.slick-next {
+								right: inherit;
+								left: -35px;
+								top: 55%;
+							}
+						}
+					}
+					.team-slider-listing-item{
+						max-width: 242px;
+						margin: 0 auto;
+
+						.team-slider-featured-image{
+							position: relative;
+							z-index: 1;
+
+							a{
+								&:before{
+									border-radius: 100%;
+								}
+								&:after{
+									position: absolute;
+									content: '';
+									background-image: url(#{$img}/icons/arrow-shape.svg);
+									background-size: contain;
+									background-repeat: no-repeat;
+									width: 108px;
+									height: 108px;
+									top: 50%;
+									left: 50%;
+									z-index: 1;
+									transform: translate(-50%, -50%);
+									opacity: 0;
+									transition: 0.4s all;
+								}
+								img{
+									border-radius: 100%;
+								}
+								&:hover{
+									&:after{
+										opacity: 1;
+									}
+								}
+							}
+						}
+						.team-slider-item-content{
+							.team-listing-title{
+
+							}
+							.team-designation{
+								margin: 0;
+								font-size: 16px;
+								font-weight: 500;
+								line-height: 1.37;
+								color: var(--wp--preset--color--white);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

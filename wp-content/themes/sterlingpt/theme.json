@@ -178,11 +178,11 @@
 				},
 				{
 					"fluid": {
-						"max": "35px",
-						"min": "30px"
+						"max": "40px",
+						"min": "35px"
 					},
 					"name": "Heading H2",
-					"size": "35px",
+					"size": "40px",
 					"slug": "heading-h2"
 				},
 				{

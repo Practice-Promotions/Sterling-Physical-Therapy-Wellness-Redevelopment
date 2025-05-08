@@ -2,23 +2,23 @@
     .wp-block-column {
         display: flex;
         flex-direction: column;
-
-        h3 {
-            order: -1;
-        }
     }
 
     h2 {
         margin: 0 0 15px;
-        color: var(--wp--preset--color--primary-100);
+        color: var(--wp--preset--color--white);
+        font-weight: 800;
+        line-height: 1.28;
     }
 
     h3 {
-        margin: 0 0 10px;
-        color: var(--wp--preset--color--secondary-100);
-        font-size: 18px;
+        margin: 0 0 15px;
+        color: var(--wp--preset--color--tertiary-100);
+        font-size: 20px;
         font-weight: 500;
         text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
     }
 
     p:last-of-type {

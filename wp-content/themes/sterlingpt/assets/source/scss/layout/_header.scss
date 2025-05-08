@@ -255,6 +255,11 @@ header {
 			@include mobile-landscape() {
 				gap: 10px;
 			}
+			li{
+				a{
+					font-weight: 400;
+				}
+			}
 		}
 	}
 

@@ -207,6 +207,22 @@ input[type="submit"] {
 	}
 }
 
+.is-style-outline{
+	.wp-block-button__link{
+		@extend .btn;
+		background-color: transparent;
+		border-color: var(--wp--preset--color--white);
+		color: var(--wp--preset--color--white);
+
+		&:focus,
+		&:hover {
+			background-color: var(--wp--preset--color--secondary-100) !important;
+			border-color: var(--wp--preset--color--secondary-100) !important;
+			color: var(--wp--preset--color--white) !important;
+		}
+	}
+}
+
 /* Button:hover color **/
 .wp-block-button__link {
 	&:hover {

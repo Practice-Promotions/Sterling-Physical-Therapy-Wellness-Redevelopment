@@ -1,8 +1,8 @@
 var $ = jQuery.noConflict();
 
 /** Define global SVG variables */
-const prevArrowSVG = '<button class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M6.2.333a1.137,1.137,0,0,0,0,1.609l3.919,3.919H1.138a1.138,1.138,0,0,0,0,2.276h8.977L6.2,12.057A1.138,1.138,0,1,0,7.8,13.667l5.853-5.853h0l.014-.015h0a1.123,1.123,0,0,0,.237-.36q.021-.05.037-.1v0l.005-.017.006-.021v0A1.127,1.127,0,0,0,14,7.029V6.972h0a1.128,1.128,0,0,0-.051-.309l0-.005,0-.015q-.013-.039-.029-.077a1.119,1.119,0,0,0-.237-.359v0h0l-.014-.014h0L7.8.333A1.138,1.138,0,0,0,6.2.333Z" transform="translate(14 14) rotate(180)"/></svg></button>';
-const nextArrowSVG = '<button class="slick-next slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M6.2,13.667a1.137,1.137,0,0,1,0-1.609l3.919-3.919H1.138a1.138,1.138,0,0,1,0-2.276h8.977L6.2,1.943A1.138,1.138,0,1,1,7.8.333l5.853,5.853h0l.014.015h0a1.123,1.123,0,0,1,.237.36q.021.05.037.1v0l.005.017.006.021v0a1.127,1.127,0,0,1,.037.26v.057h0a1.128,1.128,0,0,1-.051.309l0,.005,0,.015q-.013.039-.029.077a1.119,1.119,0,0,1-.237.359v0h0l-.014.014h0L7.8,13.667a1.138,1.138,0,0,1-1.609,0Z"/></svg></button>';
+const prevArrowSVG = '<button class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14.982" height="15.81" viewBox="0 0 14.982 15.81"><path d="M16.315,9.824H3.333M9.824,3.333,3.333,9.824l6.491,6.491" transform="translate(-2.333 -1.919)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></button>';
+const nextArrowSVG = '<button class="slick-next slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14.982" height="15.81" viewBox="0 0 14.982 15.81"><path id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" d="M3.333,9.824H16.315M9.824,3.333l6.491,6.491L9.824,16.315" transform="translate(-2.333 -1.919)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></button>';
 
 /********** Script on ready **********/
 $(() => {
@@ -50,6 +50,28 @@ $(() => {
 			},
 		]
 	});
+
+
+	$('.team-section .team-slider-part .team-slider-listing').slick({
+		rows: 0,
+		dots: false,
+		arrows: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		prevArrow: prevArrowSVG,
+		nextArrow: nextArrowSVG,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					fade: true,
+					cssEase: 'linear',
+				}
+			},
+		]
+	});
+
 
 	if ($('.insurance-partner .insurance-partner-gallery .wp-block-column').length > 5) {
 		$('.insurance-partner .insurance-partner-gallery').slick({
