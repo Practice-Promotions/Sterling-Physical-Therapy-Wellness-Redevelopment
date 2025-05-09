@@ -35,8 +35,6 @@ function my_theme_enqueue_scripts()
 	/** main script */
 	wp_enqueue_script('default-script', get_theme_file_uri() . '/assets/dest/js/scripts.min.js', array(), wp_get_theme()->get('Version'), true);
 
-	wp_enqueue_script('googlemap-script', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBKMhpr0cVhxEixcHGExqXFvUHoicTCmLo&libraries=places&v=weekly', array(), wp_get_theme()->get('Version'), true);
-
 	/** AJAX localize a script */
 	wp_localize_script('default-script', 'frontend_ajax_object', array('ajaxurl' => admin_url('admin-ajax.php')));
 	wp_localize_script('default-script', 'admin_theme_object', array('themeurl' => get_theme_file_uri()));
@@ -153,7 +151,7 @@ function my_theme_register_blocks()
 	register_block_type(__DIR__ . '/build/template-blocks/testimonial-page');
 	register_block_type(__DIR__ . '/build/template-blocks/newsletter-list');
 	register_block_type(__DIR__ . '/build/template-blocks/newsletter-list/newsletter-meta');
-	register_block_type(__DIR__ . '/build/template-blocks/location-search-page');
+	register_block_type(__DIR__ . '/build/template-blocks/youtube-player-box');
 
 	/** Single Post Blocks */
 	register_block_type(__DIR__ . '/build/single-post-blocks/single-job');

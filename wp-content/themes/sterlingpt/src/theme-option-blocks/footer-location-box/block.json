@@ -7,12 +7,7 @@
 	"category": "archive_template_block",
 	"icon": "location-alt",
 	"description": "Footer Location bOX with meta fields.",
-	"attributes": {
-		"locationType": {
-			"type": "string",
-			"default": ""
-		}
-	},
+	"attributes": {},
 	"example": {},
 	"supports": {
 		"html": false

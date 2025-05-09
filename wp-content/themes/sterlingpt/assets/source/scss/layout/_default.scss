@@ -553,14 +553,6 @@ ul {
 							width: 70px;
 							height: 70px;
 							border: 15px solid var(--wp--preset--color--primary-100);
-							background: var(--wp--preset--color--white);
-							color: var(--wp--preset--color--secondary-100);
-							&:focus,
-							&:hover {
-								background: var(--wp--preset--color--secondary-100);
-								color: var(--wp--preset--color--white);
-							}
-
 							&.slick-prev {
 								left: -35px;
 								top: 35%;
@@ -628,3 +620,26 @@ ul {
 		}
 	}
 }
+
+
+.services-section{
+	.services-section-inner{
+		.services-part{
+			.services-part-slider{
+				.services-part-slider-item{
+					// clip-path: path("M 263,0 L 214,18 L 179,54 L 162,163 L 81,167 L 27,202 L 3,247 L 0,292 L 18,341 L 56,377 L 163,393 L 167,474 L 201,527 L 244,551 L 290,555 L 339,538 L 375,502 L 393,392 L 473,388 L 526,355 L 552,307 L 555,265 L 540,219 L 499,178 L 392,162 L 388,82 L 355,29 L 307,3 Z");
+					// -webkit-clip-path: path("M 263,0 L 214,18 L 179,54 L 162,163 L 81,167 L 27,202 L 3,247 L 0,292 L 18,341 L 56,377 L 163,393 L 167,474 L 201,527 L 244,551 L 290,555 L 339,538 L 375,502 L 393,392 L 473,388 L 526,355 L 552,307 L 555,265 L 540,219 L 499,178 L 392,162 L 388,82 L 355,29 L 307,3 Z");
+					clip-path: path("M163.094,441.095V392.908H114.907a114.907,114.907,0,0,1,0-229.813h48.187V114.908a114.907,114.907,0,0,1,229.814,0v48.187h48.186a114.907,114.907,0,1,1,0,229.813H392.908v48.187a114.907,114.907,0,0,1-229.814,0Z");
+					-webkit-clip-path: path("M163.094,441.095V392.908H114.907a114.907,114.907,0,0,1,0-229.813h48.187V114.908a114.907,114.907,0,0,1,229.814,0v48.187h48.186a114.907,114.907,0,1,1,0,229.813H392.908v48.187a114.907,114.907,0,0,1-229.814,0Z");
+					.wp-block-cover__inner-container{
+						max-width: 291px;
+						width: 100%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+		.services-content{}
+	}
+}
+  

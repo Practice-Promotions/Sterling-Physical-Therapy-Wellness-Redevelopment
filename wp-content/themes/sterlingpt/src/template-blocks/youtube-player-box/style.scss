@@ -1,0 +1,94 @@
+
+.video-player {
+	.video-player-list {
+	  display: grid;
+	  gap: 30px;
+	  grid-template-columns: 1fr;
+  
+	  @media (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	  }
+  
+	  @media (min-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+	  }
+	}
+  
+	.video-list-item {
+	  background-color: var(--wp--preset--color--gray-200);
+	  border-radius: 8px;
+	  overflow: hidden;
+	  box-shadow: var(--wp--preset--shadow--natural);
+	  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+	  &:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	  }
+  
+	  .video-media {
+		position: relative;
+  
+		a {
+		  display: block;
+		  position: relative;
+  
+		  picture img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-bottom: 4px solid var(--wp--preset--color--tertiary-100);
+		  }
+  
+		  .player-play-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(255, 255, 255, 0.7);
+			border-radius: 50%;
+			padding: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: background-color 0.3s ease;
+  
+			svg {
+			  width: 24px;
+			  height: 24px;
+			  fill: #ff6f61;
+			}
+  
+			&:hover {
+			  background-color: rgba(255, 255, 255, 0.9);
+			}
+		  }
+		}
+	  }
+  
+	  .video-body {
+		padding: 15px;
+		text-align: center;
+  
+		h4 {
+		  font-size: 1.1rem;
+		  font-weight: 600;
+		  color: #333;
+		  margin-bottom: 10px;
+		}
+  
+		.video-meta {
+		  display: flex;
+		  justify-content: center;
+		  gap: 15px;
+		  font-size: 0.875rem;
+		  color: #777;
+  
+		  .views,
+		  .date {
+			display: inline-block;
+		  }
+		}
+	  }
+	}
+  }

@@ -72,15 +72,57 @@ $footer: ".footer";
 		}
 	}
 
+	&-top{
+		background: linear-gradient(to bottom, #333333 50%, #262626 50%) !important;
+		@include respond-below('md-wp'){
+			background: linear-gradient(to bottom, #333333 89%, #262626 50%) !important;
+		}
+		.footer-logopart{
+			position: relative;
+
+			@include respond-below('md-wp'){
+
+			}
+
+			.footer-logo {
+				@include respond-below('md'){
+					order: -1;
+				}
+				.wp-block-group{
+					@include respond-below('md-wp'){
+						width: 346px;
+						margin: auto;
+					}
+				}
+			}
+
+			.appointment-button{
+				.wp-block-button__link{
+					margin-top: 0 !important;
+				}
+			}
+			.footer-social{
+				.wp-block-social-links {
+					background: var(--wp--preset--color--secondary-100);
+					padding: 13px 20px;
+					border-radius: 24px;
+					width: 235px;
+					margin: auto;
+				}
+			}
+		}
+	}
+
 	&-navigation {
 		nav {
-			gap: 10px;
+			margin-block-start: 15px;
+			gap: 0;
 
 			ul {
 				li {
 					a {
 						&.wp-block-navigation-item__content.wp-block-navigation-item__content {
-							font-weight: 400;
+							font-weight: 500;
 
 							&:hover {
 								color: var(--wp--preset--color--secondary-100);
@@ -100,6 +142,8 @@ $footer: ".footer";
 	}
 
 	&-location {
+		position: relative;
+	
 		@include respond-below('lg') {
 			text-align: center;
 		}
@@ -125,37 +169,40 @@ $footer: ".footer";
 			row-gap: 20px;
 			padding: 0 15px;
 
-			@include respond-above('lg') {
+			@include respond-above('md') {
 				grid-template-columns: 1fr 1fr 1fr;
 				padding: 0;
-			}
-
-			@include respond-between('md', 'lg') {
-				grid-template-columns: 1fr 1fr;
 			}
 		}
 
 		&-item {
-			background-color: var(--wp--preset--color--primary-200);
-			padding: 30px 24px;
-			border-radius: 8px;
+			text-align: center;
 
 			h2 {
 				font-weight: 500;
-				margin-bottom: 16px;
+				font-size: 20px;
+				margin-bottom: 12px;
 				line-height: 1.33;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
 				a{
 					font-weight: 500;
+					color: var(--wp--preset--color--tertiary-100);
+
+					&:hover{
+						color: var(--wp--preset--color--secondary-100);;
+					}
 				}
 			}
 
 			p {
 				margin-bottom: 10px;
 				color: $gray-100;
-				padding-left: 30px;
 				position: relative;
+				line-height: 1.37;
 
 				&:before{
+					display: none;
 					position: absolute;
 					color: var(--wp--preset--color--secondary-100);
 					font-size: 20px;
@@ -172,6 +219,16 @@ $footer: ".footer";
 					&:hover {
 						color: var(--wp--preset--color--secondary-100);
 					}
+				}
+			}
+			span{
+				display: flex;
+				justify-content: center;
+				font-weight: 500;
+				color: var(--wp--preset--color--gray-100);
+				p{
+					margin-left: 5px;
+					margin-bottom: 0;
 				}
 			}
 		}

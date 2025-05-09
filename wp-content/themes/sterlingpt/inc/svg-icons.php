@@ -20,6 +20,9 @@ $roundArrow = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" vi
 global $PlayIcon;
 $PlayIcon = '<svg id="Group_22850" data-name="Group 22850" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"><circle id="Ellipse_32" data-name="Ellipse 32" cx="35" cy="35" r="35" fill="#29aae3" opacity="0.5"/><circle id="Ellipse_33" data-name="Ellipse 33" cx="31" cy="31" r="31" transform="translate(4 4)" fill="#29aae3"/><g id="Layer_2_00000062172789347193772170000007767633007606853554_" transform="translate(25 21)"><g id="Layer_2_copy_8"><g id="_134" transform="translate(0 0)"><path id="Path_4167" data-name="Path 4167" d="M48.267,10.749,30.669.589a4.382,4.382,0,0,0-6.569,3.8V24.7a4.382,4.382,0,0,0,6.569,3.8l17.6-10.16A4.384,4.384,0,0,0,48.267,10.749Z" transform="translate(-24.1 0.002)" fill="#fff"/></g></g></g></svg>';
 
+global $PlayerIcon;
+$PlayerIcon = '<svg height="32px"viewBox="0 0 24 32" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1"/><g id="play"><polygon points="0,0 24,16 0,32  " style="fill:#4E4E50;"/></g></svg>';
+
 global $iconquotestart;
 $iconquotestart = '<svg xmlns="http://www.w3.org/2000/svg" width="39.265" height="30" viewBox="0 0 39.265 30"><path id="Path_4168" data-name="Path 4168" d="M6.629,32.774A12.815,12.815,0,0,1,3.1,23.288C3.1,15.568,8.615,8.729,16.335,5.2l1.985,2.868C11.041,12.038,9.5,17.112,9.056,20.421a6.541,6.541,0,0,1,4.191-.662,7.7,7.7,0,0,1,7.059,7.721A8.7,8.7,0,0,1,18.1,32.994,7.317,7.317,0,0,1,12.585,35.2a8.676,8.676,0,0,1-5.956-2.426Zm22.059,0a12.815,12.815,0,0,1-3.529-9.485c0-7.721,5.515-14.559,13.235-18.088l1.985,2.868c-7.279,3.971-8.824,9.044-9.265,12.353a6.541,6.541,0,0,1,4.191-.662,7.7,7.7,0,0,1,7.059,7.721,8.7,8.7,0,0,1-2.206,5.515A7,7,0,0,1,34.644,35.2a8.676,8.676,0,0,1-5.956-2.426Z" transform="translate(-3.1 -5.2)" /></svg>';
 

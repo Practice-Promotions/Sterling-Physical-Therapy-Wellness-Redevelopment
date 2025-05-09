@@ -4,6 +4,7 @@ var $ = jQuery.noConflict();
 const prevArrowSVG = '<button class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14.982" height="15.81" viewBox="0 0 14.982 15.81"><path d="M16.315,9.824H3.333M9.824,3.333,3.333,9.824l6.491,6.491" transform="translate(-2.333 -1.919)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></button>';
 const nextArrowSVG = '<button class="slick-next slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14.982" height="15.81" viewBox="0 0 14.982 15.81"><path id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" d="M3.333,9.824H16.315M9.824,3.333l6.491,6.491L9.824,16.315" transform="translate(-2.333 -1.919)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></button>';
 
+
 /********** Script on ready **********/
 $(() => {
 	const headerHeight = $('header.wp-block-template-part').outerHeight();
@@ -37,8 +38,8 @@ $(() => {
 
 	$('.testimonial-block .testimonial-block-listing').slick({
 		rows: 0,
-		dots: true,
-		arrows: false,
+		dots: false,
+		arrows: true,
 		prevArrow: prevArrowSVG,
 		nextArrow: nextArrowSVG,
 		responsive: [
@@ -50,6 +51,30 @@ $(() => {
 			},
 		]
 	});
+
+	// if ($('.about-section .about-listing .cta-item').length > 3) {
+	// 	$('.about-section .about-listing').slick({
+	// 		rows: 0,
+	// 		dots: false,
+	// 		arrows: true,
+	// 		slidesToShow: 3,
+	// 		slidesToScroll: 1,
+	// 		prevArrow: prevArrowSVG,
+	// 		nextArrow: nextArrowSVG,
+	// 		responsive: [
+	// 			{
+	// 				breakpoint: 767,
+	// 				settings: {
+	// 					slidesToShow: 1,
+	// 					fade: true,
+	// 					cssEase: 'linear',
+	// 				}
+	// 			}
+	// 		]
+	// 	});
+	// }
+	
+	
 
 
 	$('.team-section .team-slider-part .team-slider-listing').slick({
@@ -70,6 +95,19 @@ $(() => {
 				}
 			},
 		]
+	});
+
+
+	$('.services-section .services-part-slider').slick({
+		rows: 0,
+		dots: false,
+		arrows: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: prevArrowSVG,
+		nextArrow: nextArrowSVG,
+		fade: true,
+		cssEase: 'linear',
 	});
 
 
@@ -663,6 +701,64 @@ function accordion() {
 		}
 	});
 }
+
+
+function initResponsiveSlider() {
+	const $slider = $('.about-section .about-listing');
+	const slideCount = $slider.find('.cta-item').length;
+
+	let currentMode = null; // Track current mode to prevent unnecessary reinitialization
+
+	function getMode() {
+		const width = $(window).width();
+		if (width < 768) return 'mobile';
+		if (width < 993) return 'tablet';
+		return 'desktop';
+	}
+
+	function activateSlider(slidesToShow) {
+		$slider.slick({
+			rows: 0,
+			dots: false,
+			arrows: true,
+			slidesToShow: slidesToShow,
+			slidesToScroll: 1,
+			prevArrow: whitePrevArrow,
+			nextArrow: whiteNextArrow,
+			fade: slidesToShow === 1, // Apply fade only for mobile
+			cssEase: 'linear'
+		});
+	}
+
+	function handleSlider() {
+		const mode = getMode();
+
+		if (mode === currentMode) return; // Skip if nothing changed
+		currentMode = mode;
+
+		// Destroy if already initialized
+		if ($slider.hasClass('slick-initialized')) {
+			$slider.slick('unslick');
+		}
+
+		// Decide slider settings based on mode
+		if (mode === 'desktop') {
+			if (slideCount > 3) activateSlider(3);
+		} else if (mode === 'tablet') {
+			activateSlider(2);
+		} else {
+			activateSlider(1);
+		}
+	}
+
+	// Run on load and resize
+	$(window).on('load resize', handleSlider);
+}
+
+$(document).ready(function () {
+	initResponsiveSlider();
+});
+
 
 
 /** Added a Query String to users coming from UTM. */
